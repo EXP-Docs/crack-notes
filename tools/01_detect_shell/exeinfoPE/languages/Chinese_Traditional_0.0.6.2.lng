@@ -1,0 +1,422 @@
+
+; This is user language file for Exeinfo Pe 0.0.6.2 
+
+; 2020.04.03
+
+; You can edit all : *texts to your language !!!
+
+; ( ; ) = comment - Exeinfo ignore it , empty line ignored , " " - space not allowed
+; ( _name ) = internal command for exeinfo
+; ( . ) - TForm caption
+; info : You can add any Resource Item Name ( only object with ".caption" allowed )
+; ( & )  - Hot keys info example : &About = "A" Hot key , e&xit = "X" Hot key
+
+; _Charset supported : 
+; ANSI , Arabic , Baltic , chineseBig5 , Default , EastEurope , GB2312 , Greek , Hangeul , MAC , Russian , Turkish
+
+_Version=1.01
+
+_Charset = chineseBig5  -> This is China Traditional. - *You can change to supported charset !
+
+_Comment = User Language file
+
+
+; Main Form1 ----------------------------------------------------------------------
+
+_Main
+
+EP=進入點:
+Foffset=檔案位移:
+Linker_i=連結器資訊:
+FSize=檔案大小:
+EP_sec=進入點區段:
+FirstB=進入點內容:
+SubSys=子系統:
+Overlay=附加檔案:
+Diag_=診斷
+Lame_info=簡易資訊 - 幫助提示 - 脫殼資訊
+
+; Hex 2 Dec calculator
+kalk=輸入 Hex 值 - "X" 鍵 - 結束轉換
+kalk_decHex=輸入 Dec 值轉換到 Hex               
+
+; Main form Buttons
+
+But_File=檔案:(&F)
+Plugi=外掛(&G)
+RipButton=提取(&P)
+Xscan=外部掃描
+
+; Ripper All Menu items
+
+_RipMenu
+
+exe=提取(搜尋 EXE 檔中的 EXE PE + Base64 編碼 / ELF )
+ScanonlyEXEpe=只掃描(EXE PE + Base64 編碼 / ELF )
+MSI_RIP=MSI/MSI xor FF(msi / doc / xls / pps / adp / wps ) - OLE2
+
+; GFX pictures    -   RIP Submenu :
+
+GFXRip_Menu=GFX 圖檔 - 提取 子選單:
+PNG_rip=PNG - 圖檔
+JPG_rip=JPG - 只有 JFIF + 32 CMYK 圖檔
+BMP_rip=BMP - 圖檔
+GIF_rip=GIF - 87/89 圖檔
+Rip_ico=提取(搜尋隱藏非標準圖示資料)
+AllGFX1=---> 提取所有圖檔
+
+; BIN archives    -   RIP Submenu :
+
+Arch_Rip_menu=BIN 檔案 - 提取 子選單:
+Rip_zip=提取(搜尋 ZIP 檔案)
+Rip_Rararch=提取(搜尋 Rar 檔案)
+Rip_7ziparch=提取(搜尋 7zip 檔案) + xor FF
+cab=提取(搜尋 MSCF CAB 檔案) + xor FF
+Rip_Bzip2arch=提取(搜尋 Bzip2 檔案)
+Rip_gzipArch=提取(搜尋 Gzip 檔案)
+Rip_Lzma=提取 Lzma 檔案 ( 5D 00 00 )
+Rip_Zlib=*** 提取 Zlib 檔案 ( 78 xx xx )
+Ripper_xz=提取(搜尋 XZ 封裝)
+
+Allinone1=---> 提取所有檔案
+
+www_rip=提取(搜尋 www / http: / ftp - 內部網址)
+Rip_SWFflash=提取(搜尋 SWF flash 動畫 - 最大 v.39.0 ! - zlib / lzma)
+Rip_hiddenicon=提取(搜尋隱藏非標準圖示資料)
+Rip_xml=提取(搜尋 .xml 版本 1.0 描述檔案)
+Rip_js=提取(搜尋 .js 封裝/加密檔案)
+uniRip=通用提取 - 鍵入文字 "???" 到檔案尾(EOF)
+Im_hungry_forRip=極度提取(所有檔案)
+
+;Tools Menu items
+
+ExternalRun=執行外部 EXE -> (從 exeinfopeRUN.cfg) 最大 30 項
+OverlayMenu=附加檔案 子選單:
+; submenu
+SaveOverlayifexist=儲存附加檔案為 *.ovl (假如存在)
+Trunk_overlay=剪掉附加檔案(產生新的檔案)
+Addemptyoverlaydata=新增空的附加檔案資料
+Add_overlay_from_file=從檔案新增附加檔案
+OverlayuncrypterXOR=附加檔案解密 XOR(假如 exe 在附加檔案中)
+
+OEPCorrectormenu=進入點 - OEP 更正 子選單:
+; submenu OEP
+EPcorrector1=進入點更正(Delphi / C++ 6)多檔案產生
+EPcorrector_Del_runtime=進入點更正 Delphi v.5.0 - 執行期方法
+EPcorr_DevC=進入點更正 Dev C++ / MINGW 32 / GCC 32 編譯器
+
+XoR_permutator=XoR 轉換 - 產生 *.xer 檔案 (xor,or,shl,shr,and)
+sec_stripper=區段提取 - 儲存區段到檔案(*.sec 1,2,3 ...)
+rejestry=Registry 機碼呼叫掃描器 "SOFTWARE , HKLM , HKCU" + CLSID / RSDS /TAGG
+DForm_View=DFM - Delphi 表單檔掃瞄器 ( 文字檢視 )
+Zlib_unpacker=( 資料 ) - Zlib 解壓器 v.1.2.8 - www.base2ti.com
+SearchCompilerRuntime=搜尋編譯器執行引擎 - 只用於非壓縮的檔案
+
+; Externa tools / unpackers run Button
+
+Tridexe=Trid.exe - 非 EXE 掃描 - 二進位偵測器
+MediaInfo=Media Info - 影音 - 偵測器
+dontCloseExeinfo=不要關閉 ExeInfoPE
+
+;.NET Tools / Detectors - RMButton menu
+
+NETToolMenu=.NET 工具 / 偵測器
+RedGateObfChk=RedGate.混淆檢測器 - 限試用版
+de4dot=de4dot NET 脫殼 - 混淆器 v3.1 -  2015
+ImproveNETDeobf=Improve .NET - 反混淆器 v1.0.9 -  2013.12.28
+
+eXtraTools=額外工具
+; submenu Tools
+ATunprotector=AT4RE v1.0 保護器 - 反保護工具
+sign_count=特徵統計( userdb.txt )
+VBfakeUPX=新增 Visual Basic 假特徵,限 UPX 壓縮
+ep_1000=設定進入點到 1000 如 PEcompact ,Asprotect 並且重新再掃描
+Flashscrambler=反倒敘干擾器 - UPX 壓縮增加進入點 - 並且重新再掃描
+SavemodifiedBuffertofile=儲存緩沖修改到檔案
+
+; File Menu Items
+
+F1keykeyhelp1=F1 鍵 - 鍵盤說明
+Rename_file=檔案更名
+CopyAs=複製檔案為 ... .bak
+Copy_part_of_file=複製 - 大檔案的部份並且儲存到磁碟
+Executecreateprocess=執行(建立 exe 行程) EXE
+ExecuteRun=執行(Windows 關聯) DLL,ZIP,IMG,RAR...
+Deletefile1=刪除檔案(Alt+Del)全域熱鍵
+FileProp=Windows 檔案內容
+Killexe=終止 Windows exe 行程(經由 TerminateProcess)
+Runscript=執行腳本檔 - Exeinfo PE 格式 *.Eis
+multiskaner=F2 熱鍵 - 執行多檔案掃描 - 掃描目錄
+Other_detect=滑鼠右鍵 - 其它偵測器 / 脫殼 子選單
+Viewlogfile1=全域記錄檔案 子選單 :
+;submenu Log
+Viewgloballogfile=檢視全域記錄檔案
+Deletelogfile=刪除全域記錄檔案
+
+snapshot=建立並且儲存抓圖到 JPG / PNG 檔案
+
+hex2dec=轉換 Hex 值到 Dec 並且 Dec 到 Hex
+Detect_installedNETver=偵測已安裝的 .NET Framework 版本
+signaturesv1=外部特徵 DB 檢視 ( 假如檔案 userdb.txt 已載入 )
+ExternalDBscan1=外部 DB 掃描 ( 最大 4800 個特徵 )
+
+ext_check_via_www=.Ext - 連網檢查副檔名 : www.fileinfo...
+virustotal=傳送雜湊(Hash)到 : virustotal.com - SHA256 檢查
+Send_to_Hybrid=傳送到 Hybrid 惡意軟體分析 - SHA256 檢查
+
+; Disassemble Menu on main Form - not a disassemble GUI
+
+disassemblefileview=反組譯檔案檢視 :
+dASMRVA=反組譯 RVA 相對虛擬位址
+dAsmVA=反組譯 VA 虛擬位址( 40xxxx )
+dAsm_fileoffset=反組譯檔案位移
+Searchmenu=搜尋功能表 :
+binaryHEX=Hex 位元搜尋
+string816bit=字串 8/16 位元搜尋
+ViewHEXfileOffset=檢視 HEX / Ascii 檔案位移
+
+; --------------------------------------------------------------------------------------------
+_Config
+
+.=設定 :
+CB_Fscan=快速掃描
+CBox_errors=忽略 EXE 錯誤
+Label_skin=選擇面版
+CheckBoxTOP=最上層顯示
+shell_integration=整合到右鍵
+closeEI_whenExtRun=執行外部程式時結束本程式
+Label2logFile=儲存記錄檔案:
+Gui_Big=大圖型使用者介面
+Label3lang=語系選擇 :
+; INFO : I copy "okey" value to About Form "OK" Button
+okej=確定
+; *** if exeinfo found exeinfope.lng file - show info on config window
+Ext_lang_file=已載入使用者 .lng 檔案
+
+; --------------------------------------------------------------
+_Multiscan
+
+multifile_scan=開始掃描(&S)
+wait_czekaj= - >  請等待 ...  < -
+bn_close=關閉(&E)
+Scan_dir=掃描目錄 :
+change_charset=語系(&C)
+
+; MULTISCAN MENU Right Mouse Button
+
+copy_current_l2clip=複製此列到剪貼簿
+copyresulttoClip=複製結果到剪貼簿
+savetolocalLOGfile=複製結果到記錄檔
+F_unknownExe=過濾器 - 只顯示 - **無法辦識的檔案
+F_hide64bitPEfiles=過濾器 - 隱藏 64 位元的 PE 檔案
+Hideselectedline=隱藏已選擇的列
+Hideidenticaldiagnoselines=隱藏相同診斷的列
+setFonttoBold=變換字型 -  [ 粗體 / 正常 ]
+Adv_scan_dll= >>> 執行 advanced_scan.dll <<<
+load_to_exein=載入到 ExeInfo PE
+EXITtoWindows=  結束 - 回到 Windows
+
+; ------------------------------------------------------------------
+_Sections
+
+.=區段檢視 :
+
+GroupBox1=區段狀態 :
+Check_exec=可執行
+Check_R=可讀
+Check_W=可寫
+
+SekcjaSize=區段大小 :
+
+;Sections Buttons
+
+copyTClip=複製
+SecsStat=區段狀態
+CloseTXT2=關閉
+cave_finder=找空間
+PreScan=預掃描
+
+Overlay=附加檔 :
+EOF=檔案尾 :
+
+;Sections Menu
+viewH=檢視 ( Hex / Ascii )
+viewASM=檢視 ( ASM 程式碼 )
+shortjmpcount=短程 JMP 總數 ( EB 01 - EB 05 )
+countNOPinstr=NOP 指令總數 ( 90 90. . . )
+stat00section=統計區段 00h 值 ( % )
+view_search_menu= >> 檢視 / 搜尋  功能表
+Savesectiontodisk=儲存區段到磁碟
+SekcjaSizeAll=所有區段大小 :
+
+; ------------------------------------------------------------------
+_Viewer
+
+.=檢視視窗
+
+; buttons
+cClip=複製
+CloseTXT=關閉
+
+
+; Exe Header Info GUI
+_HeadInfo
+
+.=檔頭資訊 :
+
+klip=複製
+CloseW=關閉
+
+; Window on THE Left site
+
+Label1=        目錄資訊 : 相對虛擬位址     大小
+StaticText2=輸出 :
+StaticText3=輸入 :
+StaticText4=資源 :
+StaticText5=例外 :
+StaticText6=安全 :
+StaticText7=重定位基底 :
+StaticText8=除錯 :
+StaticText9=架構 :
+StaticText10=全域指標 :
+StaticText11=TLS 表 :
+StaticText12=載入設定 :
+StaticText13=綁定輸入 :
+StaticText14=輸入表 IAT :
+StaticText1=延遲輸入 :
+StaticText15=COM 描述元 :
+StaticText16=保留 :
+netDir=.NET 中繼目錄
+
+; Window on THE Right site
+
+FromHeaderVo=   從檔頭 :         很常用 :
+GroupBox2=檔案圖示 :
+GroupBox1=從檔案
+s1=檔頭大小 :
+s2=可選檔頭大小 :
+s3=目錄數目 :
+s4=程式碼基底 :
+s5=映像基底 :
+s6=魔術可選檔頭 :
+s7=除錯資訊 - 大小 :
+s8=PE 檔案位移 :
+StaticText17=CRC 總和檢查碼 :
+t8=點我
+machineT=電腦類型 :
+OSwerlabel=OS 版本 :
+
+Image_ver=映像版本 :
+sFileAlign=檔案 / 區段 N 對齊 :
+s9=進入點到檔案尾位元組 :
+
+; Statistics GUI ---------------------------------------------------------
+_Statistic
+
+back_to_exei=關閉
+sections_but=區段
+hash_sha256=點我計算雜湊(HASH) - SHA256
+hash_sha=點我計算雜湊(HASH) - SHA1
+
+; ******************* added at version 0.0.3.4 *************************
+
+; Exe - DLL characteristic GUI
+_FileCharFlag
+
+.=檔案特性
+character=特性 : 
+GpBox_DLL=DLL 特性
+GBox1=高
+GBox2=低
+
+_NET_GUI
+
+.=.NET 目錄
+NET_PE_Header_COM=PE 檔頭 - COM 描述符號區
+NET_Meta_Data_Head=中繼資料檔頭
+NET_Streams=中繼資料流
+RipNET=提取 .Net 資源
+; ----  RMButton menu   -----
+ItemHexView=檢視此項 Hex 碼
+CopyLineClip=複製 ( 增加 ) 此列到剪貼簿
+CopyAlllinestoclip=複製所有列到剪貼簿
+Save_MDstreams=儲存所有中繼資料流
+
+_Delphi_Form
+
+.=Delphi 表單檔掃瞄器
+
+FormView=預覽表單
+saveTXT=儲存 .DFM 檔
+
+; ******************* Added at version 0.0.3.5 *************************
+; Disassemble GUI
+_Dasm_GUI
+
+.=反組譯器
+
+Code_colorizer=程式碼多色
+UpCase_code=程式碼大寫
+
+;RichMenu
+dASMRVA=反組譯 RVA 相對虛擬位址
+dAsmVA=反組譯 VA 虛擬位址( 40xxxx )
+dAsm_fileoffset=反組譯檔案位移
+
+Searchtext=搜尋文字
+
+CopySelectedToClip=複製到剪貼簿 ( 已選文字 )
+CopyAllToClip=複製到剪貼簿 - 全部
+CleanClipboard=清除剪貼簿
+
+disassemblefileview=反組譯檔案檢視 :
+View_as_Hex=檢視 HEX / Ascii 檔案位移
+MarklinetoRedBOX=啟用 / 禁用文字 且 此列標記為紅框
+
+
+; AdrConvert GUI - This is hidded GUI ! --------------------------------
+_AdrConvert
+
+.=32 位元 PE 位址轉換器
+
+Label_VA=VA 虛擬位址 :
+Label_RVA=RVA 相對虛擬位址 :
+Label_offset=檔案位移 :
+
+
+; ******************* Added at version 0.0.4.6 *************************
+
+_Help
+.=說明
+
+Line_01=F1 - 此說明
+Line_02=
+Line_03=F2 - 多檔案掃描器 [ *.exe 檔案 ]
+Line_04=F3 - 執行 Hiew.exe ( 複製它到路徑目錄 )
+Line_05=F4 - 執行 Peid.exe ( 複製它到路徑目錄 )
+Line_06=F5 - 執行 RDG Packer Detector ( 需要殼層項目整合 )
+Line_07=F6 - 執行 DiE - Detect it Easy ( 需要殼層項目整合 )
+Line_08=                                                ( 版本 0.64 - 1.01 相容 )
+Line_09=F7 - 8 /16 位元字串尋找工具
+Line_10=F9 - UPX 壓縮( LZMA 模式,UPX 需在路徑目錄 )
+Line_11=Alt+F9 - UPX LZMA 壓縮 + 強制模式
+Line_12=F10 - UPX 反壓縮 ( UPX 需在路徑目錄 )
+Line_13=F11 - 極度模式 :-)
+Line_14=
+Line_15=Alt+Del - 從磁碟刪除檔案
+Line_16=Alt+S - 使用 2 倍大的視窗 ( 縮放 開啟/關閉 )
+Line_17=滑鼠右鍵 - 顯示功能表 [ EXE 偵測器 / 工具 ]
+Line_18=
+Line_19=" + ,  -  " - 圖型使用者介面透明調整
+Line_20=
+Line_21=*                                               -
+
+; -----------------------------------------------------------------------
+
+_About
+.=關於
+
+
+; =================================================
+; End of .lng file 
+; =================================================

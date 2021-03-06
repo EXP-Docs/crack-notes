@@ -1,0 +1,388 @@
+
+; Языковый файл для Exeinfo Pe 0.0.4.6 by A.S.L
+; Если Exeinfo обнаружит этот файл, то он будет использован по умолчанию.
+; ( ; ) = комментарий - Exeinfo игнорирует его , пустые строки пропускаются , " " - пробел не допускается
+; ( _name ) = внутренние команды для exeinfo
+; ( . ) - заголовок TForm
+; Информация : Вы можете добавить для перевода любой элемент ресурса (разрешены только элементы с именем  ".caption" )
+; ( & )  - Горячие клавиши например : &About = "A" клавиша , e&xit = "X" клавиша
+; поддерживаемые _Charset:
+; ANSI , Arabic , Baltic , chineseBig5 , EastEurope , GB2312 , Greek , Hangeul , MAC , Russian , Turkish
+_Version=1.25
+_Charset = Russian
+_Comment = Русский язык
+
+; Главное окно  ----------------------------------------------------------------------
+_Main
+
+EP=Точка входа:
+Foffset=Смещение:
+Linker_i=Версия:
+FSize=Размер:
+EP_sec=EP секция:
+FirstB=Нач. байты:
+SubSys=Подсистема:
+Overlay=Оверлей:
+Diag_=Диагностика
+Lame_info=Информация для распаковки:
+; Основные Кнопки
+But_File=Файл:
+Plugi=Плагины
+DirView=Инфо
+RipButton=Ресурсы
+exToolsMenu=Инстр.
+Xscan=Скан.
+; Hex 2 Dec калькулятор
+kalk=Введите значение Hex для преобразования в Dec
+kalk_decHex=Введите значение Dec для преобразования в Hex
+
+;.меню NET Инструменты/Детекторы
+NETToolMenu=.NET Инструменты/Детекторы
+DNiD_NET_detector=Сигнатурный анализатор DNiD v1.0 by Rue - 2011.07.08
+RedGateObfChk=Платный декомпилятор Reflector
+ImproveNETDeobf=Деобфускатор Improve .NET v1.0.9 -  2013.12.28
+de4dot=.NET деобфускатор и распаковщик de4dot v3.1 -  2015
+
+; меню ресурсов
+exe=Искать EXE PE внутри + кодировка base64
+ScanonlyEXEpe= Только сканировать (без распаковки)
+MSI_RIP=MSI общий ( msi / doc / xls / pps / adp / wps )
+; Подменю: графика
+GFXRip_Menu=Извлечь графику :
+PNG_rip=Извлечь PNG
+JPG_rip=Извлечь JPG основной режим (только JFIF)
+BMP_rip=Извлечь BMP
+GIF_rip=Извлечь GIF
+AllGFX1=Извлечь всю графику
+; Подменю: BIN архивы
+Arch_Rip_menu=Извлечь архивы:
+Rip_zip=Извлечь Zip архив
+Rip_Rararch=Извлечь RAR архив
+Rip_7ziparch=Извлечь 7zip архив + Xor FF
+cab=Извлечь MS CAB архив
+Rip_Bzip2arch=Извлечь BZip2 архив
+Rip_gzipArch=Извлечь GZip архив
+Rip_Lzma=Извлечь Lzma архив ( 5D 00 ...)
+Rip_Zlib=Извлечь Zlib архив ( 78 xx ...)
+Allinone1=Извлечь все архивы
+;
+www_rip=Извлечь и показать адрес сайта: www / http / ftp:// -
+Rip_SWFflash=Ивлечь флеш
+Rip_hiddenicon=Извлечь иконки
+Rip_xml=Извлечь xml
+uniRip=Универсальный распаковщик
+Im_hungry_forRip=Агресивная распаковка ( Всё в одном )
+
+;Меню инструменты
+ExternalRun=Запуск программ (exeinfopeRUN.cfg)
+; подменю оверлей
+OverlayMenu=Оверлей
+SaveOverlayifexist=Сохранить оверлей как .ovl (если есть)
+Trunk_overlay=Вырезать оверлей (сгенерировать новый файл)
+Addemptyoverlaydata=Добавить пустой оверлей(сгенерировать новый файл)
+Add_overlay_from_file=Добавить оверлей из файла(сгенерировать новый файл)
+OverlayuncrypterXOR=Оверлей декриптор XOR (если есть)
+; подменю OEP
+OEPCorrectormenu=Исправить OEP
+EPcorrector1=EP корректор (Delphi/C++6) создание нескольких файлов
+EPcorrector_Del_runtime=EP корректор для Delphi v.5.0 - во время выполнения
+EPcorr_DevC=EP корректор для Dev C++/MINGW 32/GCC 32 компилятор
+;
+XoR_permutator=Генерировать xor-ed данные
+sec_stripper=Сохранить секции в файлы
+rejestry=Сканировать реестр
+DForm_View=Delphi Form сканер (ввиде текста)
+Zlib_unpacker=( DATA ) - Zlib unpacker v.1.2.x - www.base2ti.com
+SearchCompilerRuntime=Поиск компилятора во время выполнения
+; Подменю дополнительные инструменты
+eXtraTools=Дополнительные инструменты
+ATunprotector=AT4RE v1.0 protector - Инструменты распаковки
+sign_count=Счетчик сигнатур для (userdb.txt )
+VBfakeUPX=Добавить поддельные знаки Visual Basic для UPX пакера
+ep_1000=Установить EP до 1000 совпадений с PEcompact ,Asprotect и повторить сканирование
+Flashscrambler=Анти Flashback шифратор - включая EP  для UPX - и повторить сканирование
+SavemodifiedBuffertofile=Сохранить измененный буфер в файл
+
+;Меню файл
+Rename_file=Переименовать файл
+CopyAs=Сохранить как .bak
+Copy_part_of_file=Копировать часть файла с : 0000 до : ????
+Executecreateprocess=Выполнить, создать процесс
+ExecuteRun=Выполнить запуск
+Deletefile1=Удалить файл  Alt+Del
+FileProp=Свойства файла
+Killexe=Завершить процесс (через TerminateProcess)
+Runscript=Запустить скрипт
+ext_check_via_www=Проверить расширение файла на : www.fileinfo...
+virustotal=Отправить на: virustotal.com
+multiskaner=Мультисканирование  F2
+Other_detect=Другие детекторы/Меню распаковщиков - ПКМ
+;Подменю отчет
+Viewlogfile1=Полный отчет (Exeinfo.log):
+Viewgloballogfile=Показать Exeinfo.log
+Deletelogfile=Удалить Exeinfo.log
+;
+snapshot=Создать и сохранить скриншот главного окна в JPG/PNG
+hex2dec=Конвертерировать Hex в Dec и обратно Dec в Hex
+Detect_installedNETver=Найти установленные версии .NET Framework
+signaturesv1=Внешняя база сигнатур в userdb.txt
+ExternalDBscan1=Сканировать внешнюю базу снгатур (максимально 4700 подписей)
+
+;меню дизассемблер
+disassemblefileview=Просмотр в дизассемблированном виде :
+dASMRVA=Дизассемблировать RVA
+dAsmVA=Дизассемблировать VA ( 40xxxx )
+dAsm_fileoffset=Дизассемблировать смещение
+Searchmenu=Поиск :
+binaryHEX=Найти бинарные значения
+string816bit=Найти строки 8/16 bit ( ascii/unicode )
+ViewHEXfileOffset=Показать HEX/Ascii смещение
+
+;Другие детекторы/Меню распаковщиков - ПКМ
+;http://www.legroom.net/software/uniextract
+CFFExplorer=CFF Explorer VIII - 2012 (.NET viewer !)
+ProtectionID=Protection ID v.0.6.7.5 - 2015
+FFIFileFormatIdentifier=FFI - File Format Identifier v.1.4 - 2008
+QuickUnpack=Quick Unpack v2.3 - 2010
+InnoExtract=InnoExtractor v5.2.x - 2016
+Tridexe=Trid.exe - без EXE сканирования - двоичный детектор
+MediaInfo=Media Info - аудио-видео детектор
+dontCloseExeinfo=Не закрывать ExeinfoPE
+
+; Окно настройки --------------------------------------------------------------------------------------------
+_Config
+.=Опции
+
+CB_Fscan=Быстрое сканирование
+CBox_errors=Пропуск ошибок
+Label_skin=Обложка
+CheckBoxTOP=Всегда сверху
+shell_integration=Интегрировать в проводник
+closeEI_whenExtRun=Закрыть после сканирования.
+Label2logFile=Логи:
+Gui_Big=Большое окно
+Label3lang=Язык:
+; *** если найден exeinfope.lng файл, то показать информацию о нем
+Ext_lang_file=Загружен свой файл *.lng
+
+
+; Окно Мультисканирование --------------------------------------------------------------
+_Multiscan
+.=Мультисканирование
+
+multifile_scan=Начать сканирование
+wait_czekaj=- > Подождите < -
+bn_close=Закрыть
+Scan_dir=Провереные папки
+change_charset=Формат
+
+; Меню мультисканирования ПКМ
+copy_current_l2clip=Копировать текущую строку в буфер обмена
+copyresulttoClip=Копировать результат в буфер обмена
+savetolocalLOGfile=Сохранить результат в локальном лог файле
+F_unknownExe=Фильтр-показать только- Неизвестный файл
+F_hide64bitPEfiles=Фильтр-скрыть 64 битные PE файлы
+Hideselectedline=Скрыть выбранные линии
+Hideidenticaldiagnoselines=Скрыть идентичные линии
+setFonttoBold=Переключение шрифтов-[Жирный/Нормальный]
+Adv_scan_dll=>>>Запуск advanced_scan.dll<<<
+load_to_exein=Загрузить в ExeInfo PE
+EXITtoWindows=Выход в Windows
+
+
+;  окно секций ------------------------------------------------------------------
+_Sections
+.=Секции:
+
+GroupBox1=Информация о секции:
+Check_exec=Выполняем
+Check_R=Чтение
+Check_W=Запись
+SekcjaSize=Размер секции:
+SekcjaSizeAll=Размер всех секций :
+;Кнопки
+copyTClip=Копир.
+SecsStat=Статус
+cave_finder=Поиск
+CloseTXT2=Закрыть
+;Меню
+viewH=Показать (Hex/Ascii)
+viewASM=Диссамблеровать
+shortjmpcount=Счетчик коротких JMP (EB 01 - EB 05)
+countNOPinstr=Счетчик инструкции NOP (90 90. . .)
+stat00section=Тест 00h значений в секции (%)
+view_search_menu=Открыть меню Просмотра/Поиска
+Savesectiontodisk=Сохранить секцию на диске
+Overlay=*Оверлей:
+EOF=Оканчание:
+
+
+; Окно просмотра ------------------------------------------------------------------
+_Viewer
+.=Просмотр
+
+; кнопки
+cClip=Копир.
+CloseTXT=Закрыть
+change_charset=Формат
+
+
+; Окно информации заголовка ------------------------------------------------------------------
+_HeadInfo
+.=Информация заголовка:
+
+; кнопки
+klip=Коп.
+CloseW=Закрыть
+; слева
+Label1=    Информация: RVA                Размер
+StaticText1=Отлож. импорт:
+StaticText2=Экспорт:
+StaticText3=Импорт:
+StaticText4=Ресурсы:
+StaticText5=Исключение:
+StaticText6=Безопасность:
+StaticText7=Reloc раздел:
+StaticText8=Отладка:
+StaticText9=Архитектура:
+StaticText10=Глобальный PTR:
+StaticText11=Таблица TLS:
+StaticText12=Путь символов:
+StaticText13=Привяз. импорт:
+StaticText14=Табл. имп. IAT:
+StaticText15=Com дескриптор:
+StaticText16=резерв :
+netDir=Метаданные.NET
+; справа
+FromHeaderVo=Заголовок:      Частота:
+GroupBox2=Иконка
+s1=Размер заголовков:
+s2=Размер PE заголовка:
+s3=Количество записей:
+s4=Начало секции кода:
+s5=Предпочтительный адрес:
+s6=Подпись индефикатора:
+s7=Размер отладочной инфо.:
+s8=Смещение PE:
+StaticText17=Контрольная сумма CRC:
+MachineT=Тип аппарата:
+OSwerlabel=Версия ОС:
+GroupBox1=О файле
+sFileAlign=Выравнивание секций:
+Image_ver=Версия:
+s9=Окончание точки входа - остаток :
+
+; окно статистики -------------------------------------------------------------------
+_Statistic
+
+back_to_exei=Закрыть
+sections_but=Секции
+hash_sha256=Нажмите для хеширования SHA256
+hash_sha=Нажмите для хеширования SHA1
+
+
+;  окно свойств заголовка ------------------------------------------------------------
+_FileCharFlag
+.=Структура заголовка
+character=COFF-атрибуты:
+GBox1=Dos заголовок
+GBox2=PE заголовок
+GpBox_DLL=Дополнительные атрибуты
+
+
+; окно Net свойств --------------------------------------------------------------------------------------------
+_NET_GUI
+.=Свойства .NET
+
+NET_PE_Header_COM=PE заголовок
+NET_Meta_Data_Head=Метаданные заголовка
+NET_Streams=Потоки метаданных
+; кнопки
+Save_MDstreams=Сохранить все
+RipNET=Извлечь ресурсы
+; меню ПКМ
+ItemHexView=Просмотр Hex
+CopyLineClip=Копировать строку
+CopyAlllinestoclip=Копировать все строки
+
+
+; окно Delphi Form --------------------------------------------------------------------------------------------
+_Delphi_Form
+.=Delphi Form
+
+FormView=Просмотр
+saveTXT=Сохранить
+
+
+; окно дисаммблера --------------------------------------------------------------------------------------------
+_Dasm_GUI
+.=Дизассемблер
+
+; кнопки
+kodekolor=Код цвета
+Code_colorizer=Подсветка
+UpCase_code=ПРОПИСНЫЕ
+CloseButton=Закрыть
+; меню ПКМ
+disassemblefileview=Дизассемблировать
+dASMRVA=Дизассемблировать RVA
+dAsmVA=Дизассемблировать VA ( 40xxxx )
+dAsm_fileoffset=Дизассемблировать смещение
+Searchtext=Поиск
+CopySelectedToClip=Копировать выделенное
+CopyAllToClip=Копировать всё
+CleanClipboard=Очистить буфер
+View_as_Hex=Hex просмотр
+MarklinetoRedBOX=Вкл/Выкл выделение блоков
+; меню ПКМ шрифт
+Courier=Обычный
+Fixedsys=Полужирный (по умолчанию)
+
+
+;  окно адресного конвертора --------------------------------------------------------------------------------------------
+_AdrConvert
+.=32-битный адресный конвертор
+
+Label_VA=VA :
+Label_RVA=RVA :
+Label_offset=Смещение:
+
+
+; окно справки
+_Help
+.= Справка
+
+Line_01=F1  -  Для вызова справки
+Line_02=
+Line_03=F2  -  Мультисканирование
+Line_04=F3  -  Запуск Hiew.exe ( Hiew в папке с Exeinfo)
+Line_05=F4  -  запуск Peid.exe ( Peid в папке с Exeinfo)
+Line_06=F5  -  Запуск RDG Packer Detector (зарегестрирован реестре)
+Line_07=F6  -  Запуск DiE - Detect it Easy  (зарегестрирован реестре) 
+Line_08=                      ( совместимость 0.64 - 1.01 версий  Win 32bit)
+Line_09=F7  -  Найти строки 8/16 bit
+Line_10=
+Line_11=F9        - Упаковать UPX ( LZMA mode , upx в папке с Exeinfo)
+Line_12=Alt+F9 - Упаковать UPX LZMA + force mode
+Line_13=F10      - Распоковать UPX ( upx в папке с Exeinfo)
+Line_14=F11     -  P A N I C   M O D E     :-)
+Line_15=Alt+Del       -  Удалить файл с диска
+Line_16=Alt+S           -  Размер активного окна x2 ( on/off )
+Line_17=R.M. Button  -  Другие детекторы/Меню распаковщиков
+Line_18=
+Line_19=" + ,  -  "  -  Прозрачность основного окна
+Line_20=
+Line_21=
+
+
+
+; окно о программе
+_About
+.=О программе
+
+
+
+; =================================================
+; End of .lng file 
+; =================================================
+

@@ -1,0 +1,558 @@
+
+; This is user language file for Exeinfo Pe 0.0.4.6 by A.S.L
+
+
+
+; If Exeinfo find this file config lng  will be ignored
+
+; ( ; ) = comment - Exeinfo ignore it , empty line ignored , " " - space not allowed
+; ( _name ) = internal command for exeinfo
+; ( . ) - TForm caption
+; info : You can add any Resource Item Name ( only object with ".caption" allowed )
+; ( & )  - Hot keys info example : &About = "A" Hot key , e&xit = "X" Hot key
+
+; _Charset supported : 
+; ANSI , Arabic , Baltic , chineseBig5 , Default , EastEurope , GB2312 , Greek , Hangeul , MAC , Russian , Turkish
+
+
+_Version=1.24
+_Charset = GB2312  - This is Chinese Simplified. - *You can change to supported charset !
+_Comment = User Language file
+; Charset:GB2312 draft/beta created by MistHill on 24/03/2013, last updated on 25/03/2013; updated for v0.0.4.6 II on 21/03/2017
+
+; Main Form1 ----------------------------------------------------------------------
+
+_Main
+
+EP=程序入口:
+Foffset=文件偏移:
+Linker_i=连接器版本:
+FSize=文件大小:
+EP_sec=入口区段:
+FirstB=入口字节:
+SubSys=子系统:
+Overlay=附加数据:
+Diag_=判断
+Lame_info=初步信息 - 帮助提示 - 脱壳信息
+
+; Hex 2 Dec calculator
+kalk=输入十六进制(Hex)值 - "x"键 - 关闭转换器
+kalk_decHex=输入十进制(Dec)值转换到十六进制(Hex)
+
+; Main form Buttons
+
+But_File=文件(&F)
+Plugi=插件(&G)
+;O_prog=关于(&A)
+;opcje_but=选项(&O)
+;wyjscie=退出(&X)
+RipButton=提取(&P)
+
+; Ripper All Menu items
+
+_RipMenu
+
+exe=提取(查找EXE中的 EXE PE 和 Base64 编码)
+ScanonlyEXEpe=仅扫描(查找 EXE PE)
+MSI_RIP=MSI/MSI xor FF(msi / doc / xls / pps / adp / wps ) - OLE2
+
+; GFX pictures    -   RIP Submenu :
+
+GFXRip_Menu=GFX 图片 - 提取 子菜单:
+PNG_rip=PNG - 便携式网络图形
+JPG_rip=JPG - 基本模式(仅限JFIF)
+BMP_rip=BMP - Windows位图
+GIF_rip=GIF - 基本模式(仅限静态)
+AllGFX1=---> 提取所有图片
+
+; BIN archives    -   RIP Submenu :
+
+Arch_Rip_menu=BIN 文件 - 提取 子菜单:
+Rip_zip=提取(查找ZIP文件)
+Rip_Rararch=提取(查找Rar文件)
+Rip_7ziparch=提取(查找7zip文件 + Xor FF)
+cab=提取(查找MSCF CAB文件)
+Rip_Bzip2arch=提取(查找Bzip2文件)
+Rip_gzipArch=提取(查找Gzip文件)
+Allinone1=---> 提取所有文件
+
+
+
+www_rip=提取(搜索内部www/http:/ftp:网址)
+Rip_SWFflash=提取(搜索SWF flash动画 - 最高支持v.25)
+Rip_hiddenicon=提取(搜索隐藏NSTD图标数据)
+Rip_xml=提取(搜索.xml版本1.0脚本文件)
+uniRip=通用提取 - 从输入的字符串"???"到文件末尾
+Im_hungry_forRip=极度提取(所有文件)
+
+;Tools Menu items
+
+ExternalRun=运行外部EXE -> (取自exeinfopeRUN.cfg) 最多30项
+OverlayMenu=附加数据 子菜单:
+; submenu
+SaveOverlayifexist=保存附加数据为*.ovl(如果存在)
+Trunk_overlay=截断附加数据(生成新文件)
+Addemptyoverlaydata=添加空附加数据
+Add_overlay_from_file=从文件添加附加数据
+OverlayuncrypterXOR=附加数据解密 XOR(如果附加数据含EXE)
+
+OEPCorrectormenu=入口点 - OEP修正 子菜单:
+; submenu OEP
+EPcorrector1=入口点修正(适用于Delphi / C++ 6 ) - 生成多个文件
+EPcorrector_Del_runtime=入口点修正(适用于Delphi v.5.0) - 运行时方法
+EPcorr_DevC=入口点修正(适用于Dev C++ / MINGW 32 / GCC 32 编译器)
+;
+XoR_permutator=XoR变换 - 生成*.xer文件(xor,or,shl,shr,and)
+sec_stripper=区段提取 - 保存各区段到文件(*.sec 1,2,3 ...)
+rejestry=注册表函数调用扫描 "SOFTWARE, HKLM, HKCU" + CLSID / RSDS / TAGG
+SearchCompilerRuntime=搜索编译器运行时引擎 - 仅适用于未压缩文件
+
+eXtraTools=其他工具
+; submenu Tools
+ATunprotector=AT4RE v1.0 Protector - 反保护工具
+sign_count=特征签名检索(使用userdb.txt)
+VBfakeUPX=添加Visual Basic伪签名(仅限UPX压缩)
+ep_1000=设置入口点为1000, 如PEcompact和Asprotect, 并重新扫描
+Flashscrambler=反闪回扰码(Flashback scrambler), 为UPX压缩增加入口点, 并重新扫描
+SavemodifiedBuffertofile=保存修改后缓存内容到文件
+
+; File Menu Items
+
+Rename_file=重命名文件
+CopyAs=复制文件为 ... .bak
+Executecreateprocess=运行(创建exe进程)EXE
+ExecuteRun=运行(Windows关联)DLL, ZIP, IMG, RAR...
+Deletefile1=删除文件(Alt+Del) 全局热键
+FileProp=Windows文件属性(&W)
+Killexe=终止Windows中的exe进程(通过TerminateProcess)
+multiskaner=F2热键 - 多文件扫描 - 扫描文件夹
+Other_detect=鼠标右键 - 其它检测器/脱壳器 子菜单
+Viewlogfile1=全局日志文件 子菜单:
+;submenu Log
+Viewgloballogfile=查看全局日志文件
+Deletelogfile=删除全局日志文件
+;
+snapshot=创建并保存屏幕截图到JPG/PNG文件(&S)
+
+hex2dec=转换十六进制Hex值到十进制Dec 及 Dec到Hex(&H)
+Detect_installedNETver=检测已安装的.NET Framework版本(&N)
+
+; Disassemble Menu on main Form - not a disassemble GUI
+
+disassemblefileview=反汇编文件视图:
+dASMRVA=按RVA反汇编
+dAsmVA=按VA反汇编( 40xxxx )
+dAsm_fileoffset=按文件偏移反汇编
+Searchmenu=搜索菜单:
+binaryHEX=十六进制Hex字节
+string816bit=字符串 8/16位(ASCII/UNICODE)
+ViewHEXfileOffset=查看HEX/ASCII文件偏移
+
+; --------------------------------------------------------------------------------------------
+
+_Config
+
+.=选项设置:
+CB_Fscan=快速扫描
+CBox_errors=忽略程序错误
+Label_skin=选择皮肤
+CheckBoxTOP=总在最前
+shell_integration=系统右键集成
+closeEI_whenExtRun=运行外部检测器时退出本程序
+Label2logFile=日志文件:
+Gui_Big=大界面
+Label3lang=选择语言:
+; INFO : I copy "okey" value to About Form "OK" Button
+okej=确定
+; *** if exeinfo found exeinfope.lng file - show info on config window
+Ext_lang_file=本地化语言文件已载入
+
+; --------------------------------------------------------------
+
+_Multiscan
+
+multifile_scan=开始扫描(&S)
+wait_czekaj= - >  请等待 ...  < -
+bn_close=关闭(&C)
+Scan_dir=扫描文件夹:
+change_charset=语言(&C)
+
+; MULTISCAN MENU Right Mouse Button
+
+copy_current_l2clip=复制当前行到剪贴板
+copyresulttoClip=复制结果到剪贴板
+savetolocalLOGfile=保存结果到本地日志文件
+F_unknownExe=过滤 - 只显示 - 未知文件
+F_hide64bitPEfiles=过滤 - 隐藏64位PE文件
+Hideselectedline=隐藏已选择的行
+Hideidenticaldiagnoselines=隐藏相同结果行
+setFonttoBold=字体切换 -  [ 粗体 / 正常 ]
+Adv_scan_dll=>>>  运行 advanced_scan.dll  <<<
+load_to_exein=载入到ExeInfo PE
+EXITtoWindows=退出 - 回到Windows
+
+; ------------------------------------------------------------------
+
+_Sections
+
+.=区段查看:
+
+GroupBox1=区段属性:
+Check_exec=可执行
+Check_R=可读
+Check_W=可写
+
+SekcjaSize=区段大小:
+
+;Sections Buttons
+
+copyTClip=复制
+SecsStat=统计
+CloseTXT2=关闭
+
+
+;Sections Menu
+viewH=查看( &Hex/Ascii )
+viewASM=查看( ASM 代码 )
+shortjmpcount=短/近JMP统计 ( EB 01 - EB 05 )
+countNOPinstr=NOPs指令统计 ( 90 90. . . )
+stat00section=区段含00h值个数统计 ( % )
+view_search_menu=>>  查看/搜索 子菜单
+Savesectiontodisk=保存区段到磁盘
+
+
+; ------------------------------------------------------------------
+
+_Viewer
+
+.=查看视图
+
+; buttons
+cClip=复制
+CloseTXT=关闭
+
+
+; ------------------------------------------------------------------
+
+; Exe Header Info GUI
+_HeadInfo
+
+.=文件头信息:
+FromHeaderVo=  文件头值:       常用值:
+klip=复制
+CloseW=关闭
+
+;
+;
+;
+;
+;
+
+
+; -------------------------------------------------------------------
+
+_Statistic
+
+back_to_exei=关闭
+sections_but=区段
+
+
+; ******************* added at version 0.0.3.4 *************************
+
+
+; Exe - DLL characteristic GUI
+_FileCharFlag
+
+.=文件特性
+character=特性: 
+GpBox_DLL=DLL 特性
+GBox1=高
+GBox2=低
+
+_NET_GUI
+
+.=.NET 属性
+NET_PE_Header_COM=PE 表头
+NET_Meta_Data_Head=元数据表
+NET_Streams=元数据流
+RipNET=提取 .Net 资源
+; ----  RMButton menu   -----
+ItemHexView=查看 Hex 值
+CopyLineClip=复制(增加)当前行到剪贴板
+CopyAlllinestoclip=复制所有行到剪贴板
+
+
+_Delphi_Form
+
+.=Delphi 表单
+
+FormView=查看表单
+saveTXT=保存为.DFM文件
+
+
+_Main
+;  BIN archives    -   RIP Submenu :
+
+Rip_Lzma=提取(查找Lzma文件) ( 5D 00 00 )
+Rip_Zlib=提取(查找Zlib文件) ( 78 xx xx )
+
+;Tools Menu items
+
+Zlib_unpacker=(DATA) - Zlib 解压缩 v.1.2.x - www.base2ti.com
+DForm_View=Delphi 表单扫描器(文本模式)
+
+
+;.NET Tools / Detectors - RMButton menu
+
+NETToolMenu=.NET 工具 / 探测器
+RedGateObfChk=RedGate Reflector 反编译(付费版)
+
+
+; ******************* Added at version 0.0.3.5 *************************
+
+; File Menu Items - Main Form
+
+Copy_part_of_file=复制部分文件，从0000到????
+
+
+; Sections GUI
+
+_Sections
+
+cave_finder=找空白
+
+
+; Disassemble GUI
+
+
+_Dasm_GUI
+
+.=反汇编
+
+kodekolor=代码颜色
+Code_colorizer=代码着色
+UpCase_code=代码大写
+CloseButton=关闭
+
+;RichMenu
+
+dASMRVA=反汇编(按 RVA 相对虚拟地址)
+dAsmVA=反汇编(按 VA 虚拟地址)( 40xxxx )
+dAsm_fileoffset=反汇编(按文件偏移)
+
+
+Searchtext=查找文本
+
+CopySelectedToClip=复制已选到剪贴板
+CopyAllToClip=复制全部到剪贴板
+CleanClipboard=清除剪贴板
+
+disassemblefileview=反汇编视图:
+View_as_Hex=查看 HEX / Ascii
+MarklinetoRedBOX=打开/关闭选择区域显示
+
+
+; AdrConvert GUI
+_AdrConvert
+
+.=32位地址转换器
+
+Label_VA=按VA 虚拟地址 :
+Label_RVA=按RVA 相对虚拟地址 :
+Label_offset=按文件偏移 :
+
+
+; ******************* Added at version 0.0.3.5  Beta 765 **************
+_Main
+
+; File Menu Items
+
+Runscript=运行脚本文件 - Exeinfo PE 格式 *.Eis
+
+
+; ******************* Added at version 0.0.3.7 *************************
+
+
+_Main
+
+; File Menu Items
+
+ext_check_via_www=按文件扩展名在线检测 : www.fileinfo...
+
+
+
+;.NET Tools / Detectors - RMButton menu
+
+ImproveNETDeobf=Improve .NET 反混淆器 v1.0.9 -  2013.12.28
+
+
+
+
+
+
+; ******************* Added at version 0.0.3.8 *************************
+
+
+_NET_GUI
+
+Save_MDstreams=保存全部元数据流
+
+
+; ******************* Added at version 0.0.3.9 *************************
+
+_Main
+
+; File Menu Items
+
+virustotal=发送哈希值到 : virustotal.com
+
+
+; ******************* Added at version 0.0.4.0 *************************
+
+_Sections
+
+SekcjaSizeAll=所有区段大小 :
+
+
+; ******************* removed at version 0.0.4.1 *************************
+
+; item removed !!!
+;calculator1=* Run &Calculator
+
+
+; Main form Buttons
+
+;O_prog=AbOuT
+;opcje_but=OPtion
+;wyjscie=*Exit !
+
+; ******************* removed at version 0.0.4.2 final *************************
+
+_Main
+
+; File Menu Items
+
+signaturesv1=外部特征扫描(使用 userdb.txt)
+ExternalDBscan1=外部脚本库扫描(最多 4700 个特征)
+
+
+; .NET menu Run external
+
+de4dot=de4dot .NET 脱壳 - 反混淆器 v3.1 -  2015
+
+; ******************* Added at version 0.0.4.5 *************************
+
+; Main GUI Form
+_Main
+
+Xscan=外部扫描
+
+F1keykeyhelp1=F1 键 - 键盘说明
+
+Tridexe=Trid.exe - 非 EXE 扫描 - 二进制检测器
+MediaInfo=Media Info - 影音检测器
+dontCloseExeinfo=不关闭 ExeInfoPE
+
+
+; Exe Header Info GUI
+_HeadInfo
+
+; Window on Left site
+
+Label1=        目录信息 :  相对虚拟地址     大小
+
+StaticText1=延迟导入 :
+StaticText2=导出表 :
+StaticText3=导入表 :
+StaticText4=资源 :
+StaticText5=异常 :
+StaticText6=安全 :
+StaticText7=重定位表 :
+StaticText8=调试信息 :
+StaticText9=版权信息 :
+StaticText10=全局指针 :
+StaticText11=线程本地存储 :
+StaticText12=载入配置 :
+StaticText13=绑定导入 :
+StaticText14=导入地址表 :
+StaticText15=COM运行时描述 :
+StaticText16=保留 :
+
+netDir=.NET 元数据
+
+; Window on Right site
+
+GroupBox2=文件图标 :
+GroupBox1=来自文件的信息
+s1=文件头大小 :
+s2=Optional头大小 :
+s3=目录数目 :
+s4=代码基址 :
+s5=映像基址 :
+s6=标志字 :
+s7=调试信息大小 :
+s8=PE结构文件偏移 :
+StaticText17=CRC 校验和 :
+t8=点这里
+machineT=运行平台 :
+OSwerlabel=操作系统版本 :
+
+
+Image_ver=映像版本 :
+sFileAlign=文件/区段对齐 :
+s9=入口到文件末尾字节数 :
+
+
+
+
+
+; ******************* Added at version 0.0.4.6 *************************
+
+
+_Help
+
+.=帮助
+
+Line_01=F1 - 弹出此帮助
+Line_02=
+Line_03=F2 - 多文件扫描器 [ *.exe 檔案 ]
+Line_04=F3 - 运行 Hiew.exe ( Hiew 需在环境变量 Path中 )
+Line_05=F4 - 运行 Peid.exe ( Peid 需在环境变量 Path中 )
+Line_06=F5 - 运行 RDG Packer Detector ( 已安装 - 系统右键集成 )
+Line_07=F6 - 运行 DiE - Detect it Easy( 已安装 - 系统右键集成 )
+Line_08=                                               ( 兼容版本 0.64 - 1.01 32位 )
+Line_09=F7 - 8 /16 位字符串搜索
+Line_10=F9 - UPX 压缩( LZMA 模式, UPX 需在环境变量 Path中 )
+Line_11=Alt+F9 - UPX LZMA 压缩 + 强制模式
+Line_12=F10 - UPX 解压缩 ( UPX 需在环境变量 Path中 )
+Line_13=F11 - 紧急模式 :-)
+Line_14=
+Line_15=Alt+Del - 从磁盘删除文件
+Line_16=Alt+S - 当前窗口增大一倍或还原
+Line_17=鼠标右鍵 - 显示功能菜单 [ 其他检测器 / 解压缩工具 ]
+Line_18=
+Line_19=" + ,  -  " - 主窗口透明度调节
+Line_20=
+Line_21=
+
+
+_Statistic
+
+hash_sha256=点击 - 计算 SHA256 哈希值
+hash_sha=点击 - 计算 SHA1 哈希值
+
+
+_About
+.=关于
+
+
+; added v0.0.4.6 II
+
+_Sections
+
+Overlay=附加数据:
+EOF=文件末尾:
+
+; =================================================
+; End of .lng file 
+; =================================================

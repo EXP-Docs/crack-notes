@@ -1,0 +1,189 @@
+///  易语言破解下断点脚本  YYHD修改   2021/2/18
+
+///  本脚本用到的全局变量声明 
+
+var iBpCount 
+var startAddr  // 搜索起始地址 
+var AEND
+var end
+mov iBpCount,0  // 断点总数计数器 
+mov startAddr,401000  // 
+mov AEND,7FFE0000
+
+mov end,401100
+
+///  输入信息提示框 
+/// 
+ask "输入相应数字下断点：1(按钮事件)    2(文本比较)    3(置换窗口)   4(易语言体)  " 
+cmp $RESULT, 1 
+je EL1BnClick_Start 
+cmp $RESULT, 2 
+je EL2BnClick_Start 
+cmp $RESULT, 3 
+je EL3BnClick_Start 
+cmp $RESULT, 4 
+je EL4BnClick_Start 
+
+
+msg "只能输入数字1到4。。。" 
+ret 
+
+///  输入信息提示框 end 
+/// 
+
+/  易语言程序按钮单击事件脚本 
+
+EL1BnClick_Start: 
+
+findmem #FF55FC5F5E#  // 易语言单击事件汇编命令特征  
+
+cmp $RESULT,0  // 判断是否找到特征码 
+je EL1BnClick_End  // 没找到就结束查找 
+bp $RESULT
+add $RESULT,5
+add iBpCount,1 
+mov startAddr,$RESULT  // 更新查找起始地址 
+
+EL1loop:
+
+find startAddr,#FF55FC5F5E#
+cmp $RESULT,0
+je EL1BnClick_End 
+add $RESULT,00
+bp $RESULT
+add $RESULT,5
+mov startAddr,$RESULT
+add iBpCount,1 
+cmp startAddr,AEND
+jge EL1CBnClick_End
+
+jmp EL1loop
+
+
+EL1BnClick_End: 
+itoa iBpCount,10.  // 断点计数器转为10进制，转换结果放到$RESULT中 
+eval "按钮事件查找完毕,断点总数:{$RESULT}" 
+msg $RESULT 
+ret  // 退出脚本 
+// 
+/  易语言程序按钮单击事件脚本 end 
+/// 
+
+
+/  易语言文本比较脚本 
+
+EL2BnClick_Start: 
+
+mov iBpCount,0
+
+findmem #8B5424048B4C240885D2#  // 易语言文本比较汇编命令特征  
+
+cmp $RESULT,0  // 判断是否找到特征码 
+je EL2BnClick_End  // 没找到就结束查找 
+add $RESULT,A
+bp $RESULT
+go $RESULT
+add iBpCount,1 
+
+EL2BnClick_End: 
+itoa iBpCount,10.  // 断点计数器转为10进制，转换结果放到$RESULT中 
+eval "文本比较查找完毕,断点总数:{$RESULT}" 
+msg $RESULT 
+
+ret  // 退出脚本 
+
+// 
+/  易语言文本比较脚本 end 
+/// 
+
+
+
+/  易语言置换窗体脚本 
+
+EL3BnClick_Start: 
+
+var chti
+
+mov iBpCount,0
+
+
+find startAddr, #FF25#  // 易语言置换窗体汇编命令特征  
+
+cmp $RESULT,0  // 判断是否找到特征码 
+je EL3BnClick_End  // 没找到就结束查找 
+sub $RESULT,15
+mov chti,$RESULT
+bp $RESULT
+add iBpCount,1
+add $RESULT,A
+
+
+
+EL3loop:
+
+find startAddr,#6801000100#
+cmp $RESULT,0
+je EL3BnClick_End 
+add $RESULT,00
+bp $RESULT
+add $RESULT,A
+mov startAddr,$RESULT
+add iBpCount,1 
+
+cmp startAddr,AEND
+jge EL3CBnClick_End
+
+
+jmp EL3loop
+
+
+
+EL3BnClick_End: 
+itoa iBpCount,10.  // 断点计数器转为10进制，转换结果放到$RESULT中 
+eval "置换窗体查找完毕,断点总数:{$RESULT}" 
+msg $RESULT 
+
+ret  // 退出脚本 
+
+// 
+/  易语言置换窗体脚本 end 
+/// 
+
+
+/  易语言体脚本 
+
+EL4BnClick_Start: 
+
+
+
+mov iBpCount,0
+
+
+EL4loop:
+find startAddr, #FF25#  // 易语言体汇编命令特征  
+
+cmp $RESULT,0  // 判断是否找到特征码 
+je EL4BnClick_End  // 没找到就结束查找 
+
+bp $RESULT
+add $RESULT,6
+add iBpCount,1 
+mov startAddr,$RESULT
+
+cmp startAddr,end
+jge EL4BnClick_End
+
+jmp EL4loop
+
+
+
+EL4BnClick_End: 
+itoa iBpCount,10.  // 断点计数器转为10进制，转换结果放到$RESULT中 
+eval "文本比较查找完毕,断点总数:{$RESULT}" 
+msg $RESULT 
+
+ret  // 退出脚本 
+
+// 
+/  易语言体脚本 end 
+/// 

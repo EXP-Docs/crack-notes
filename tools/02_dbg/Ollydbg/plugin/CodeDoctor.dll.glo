@@ -1,0 +1,298 @@
+9 1	4 2
+ - Error, not found!	 - 错误, 没有找到!
+ Data: <%s> %s\\n	 数据: <%s> %s\\n
+#File Error#(%d) : 	#文件错误#(%d) : 
+%ID %Xh, Address: %Xh, Name: %s\\n	%ID %Xh, 地址: %Xh, 名称: %s\\n
+(note: these are used only if aspr_ide.dll is imported)\\n\\n	(注意: 如果aspr_ide.dll 已导入这些仅是使用)\\n\\n
+,\\t\\t\\t\\t\\t\\t  |10 &Settings...,\\t\\t\\t\\t\\t\\t  11 &About	,\\t\\t\\t\\t\\t\\t  |10 设置(&S)...,\\t\\t\\t\\t\\t\\t  11 关于(&A)
+,\\t\\t\\t\\t\\t\\t  |10 &Settings...,\\t\\t\\t\\t\\t\\t  11 &About}	,\\t\\t\\t\\t\\t\\t  |10 设置(&S)...,\\t\\t\\t\\t\\t\\t  11 关于(&A)}
+\\n*** Checksum ***	\\n*** 校验和 ***
+\\n*** Checksum Size ***	\\n*** 校验和大小 ***
+\\n\\n========= AIP (v1.31 or v2.0 Alpha) =========	\\n\\n========= AIP (v1.31 或 v2.0 Alpha) =========
+\\n\\n========= AIP =========\\n\\nEntries: %d\\n	\\n\\n========= AIP =========\\n\\n入口: %d\\n
+\\n\\n========= Borland Init protection =========\\n	\\n\\n========= Borland Init 保护 =========\\n
+\\n\\n========= Checksum =========\\n	\\n\\n========= 校验和 =========\\n
+\\n\\n========= Key Storage Info =========\\n	\\n\\n========= 密钥存储信息 =========\\n
+\\n\\n========= Overlay =========	\\n\\n========= 覆盖 =========
+\\n\\n========= Poly OEP =========\\n	\\n\\n========= 多 OEP =========\\n
+\\n\\n========= Resources =========	\\n\\n========= 资源 =========
+\\n\\nFunction RVAs:	\\n\\n函数 RVAs:
+\\n\\nGreets to: all reversers, programmers;\\n    ARTeam, tuts4you.com, woodmann.com;\\n    poker players, travellers, photographers;\\n    libertarians, classical liberals, Ron Paul fans,\\n    eurosceptics, Vaclav Klaus...\\n   ....and YOU for using this plugin :)	\\n\\n致敬: 所有逆向组织, 程序员;\\n    ARTeam, tuts4you.com, woodmann.com;\\n    poker players, travellers, 摄影师;\\n    libertarians, classical liberals, Ron Paul fans,\\n    eurosceptics, Vaclav Klaus...\\n   ....和使用该插件的你 :)
+\\n\\nOpcodes: %d	\\n\\n操作码: %d
+\\n\\nOrdinal: %Xh	\\n\\n序数: %Xh
+\\n\\nPUSHes - Offset and Destination in Poly:\\n	\\n\\nPUSHes - 偏移及目标在 Poly中:\\n
+\\n\\nSize: %Xh\\nOffset Original: %Xh\\nOffset New: %Xh	\\n\\n大小: %Xh\\n原始偏移: %Xh\\n新偏移: %Xh
+\\n========= API information =========	\\n========= API 信息 =========
+\\nAlternative decoding: %s	\\n替代译码: %s
+\\nAsProtect envelope functions:\\n	\\nAsProtect envelope 功能:\\n
+\\nConstant 2: %Xh	\\n常量 2: %Xh
+\\nConstant: %Xh	\\n常量: %Xh
+\\nData: 	\\n数据: 
+\\nEmulated functions (1.21 - 1.23 RC1):\\n	\\n模拟函数 (1.21 - 1.23 RC1):\\n
+\\nEmulated functions (1.23 RC4 - 1.30B):\\n	\\n模拟函数 (1.23 RC4 - 1.30B):\\n
+\\nEmulation Opcode Index: %d, Instruction(s): 	\\n模拟操作码索引: %d, 指令: 
+\\nEncrypted: %s	\\n已加密: %s
+\\nFile Name: %s	\\n文件名: %s
+\\nFile: 	\\n文件: 
+\\nIndex: %d	\\n索引: %d
+\\nLine: 	\\n行: 
+\\nModule: 	\\n模块: 
+\\nName: %s	\\n名称: %s
+\\nNo Valid Modes Message: %s	\\n不是有效的模式信息: %s
+\\nOffset: %Xh, 	\\n偏移: %Xh, 
+\\nOffset: %Xh, Destination: %Xh	\\n偏移量: %Xh, 目标: %Xh
+\\nOrdinal: %d	\\n序数: %d
+\\nRegistry Key: %s	\\n注册表项: %s
+\\nRegKey Dialog - Body: %s	\\nRegKey 对话框 - 主体: %s
+\\nRVA to some function: %Xh	\\nRVA 一些函数: %Xh
+\\nRVA: %Xh, Offset: %Xh	\\nRVA: %Xh, 偏移: %Xh
+\\nSize of Opcode: %Xh	\\n操作码大小: %Xh
+\\nSize: %Xh	\\n大小: %Xh
+\\nSize: %Xh\\n	\\n大小: %Xh\\n
+\\nTotal entries: %d	\\n全部记录: %d
+\\nType: %d	\\n类型: %d
+\\nType: %s	\\n类型: %s
+0 is not a valid subexpression index.	0 是一个无效的 subexpression 索引.
+Add	添加
+Additive operations	递增法操作
+Addr: 0x%X	 地址: 0x%X
+AIP - assembled length larger than original length! - RVA: %Xh	AIP - 汇编长度比原来的大! - RVA: %Xh
+AIP - Hashing area not found or multiple results!	AIP - 散列法区域没有找到或多个结果!
+AIP - Incorrect API/DLL index!	AIP - 不正确的 API/DLL 索引!
+AIP - unknown emulated opcode!	AIP - 未知的模拟操作码!
+AIP: Incorrect offset or size of hashed area!	AIP:hashed区域不正确的偏移或大小!
+API hash routine - block length larger than block	API hash 例程 - 数据块比原来的大
+Assertion Failed	断定失败
+bad allocation	分配错误
+Bad datatype in Print_Operand (expression version) function!	错误的数据类型在 Print_Operand (表达式版本) 函数!
+bad exception	异常
+bad input parameter	输入参数异常
+Bad segment in Print_Operand (expression version) function!	在 Print_Operand (表达式版本) 函数中 断损坏!
+Before 4 loops - error	在循环4前 - 错误
+Binary file	二进制文件
+Borland Init protection - Incorrectly decoded RVA!	Borland Init 保护 - 不正确的译码 RVA!
+Borland Init protection - Incorrectly decoded RVA!!	Borland Init 保护 - 不正确地解码 RVA!!
+Borland Init protection - not found!	Borland Init 保护 - 未找到!
+Borland Init protection - Too many or too low results!	Borland Init 保护 - 太多或太少的结果!
+Borland Init protection	Borland Init 保护
+Calls	调用
+Cancelled by user.	被用户取消.
+Can't access subexpressions in an invalid regex.	在一个无效的正则表达式中不能访问子程式表达.
+Can't create dll file!	不能创建dll文件!
+Can't create executable file!	不能创建可执行文件!
+Can't create logfile	不能创建日志文件
+Can't create userdata file!	不能创建 userdata 文件!
+Can't open the file!	不能打开文件!
+Change to ADD ESP, 4	更改为 ADD ESP, 4
+CheckFlags - bad input parameter	CheckFlags - 错误的输入参数
+Checksum  - Not found!!	校验和  - 未找到!!
+Checksum - ID not found!	校验和 - ID 没有找到!
+Checksum - Too many results!	校验和 - 太多结果!
+Checksum Size	校验和大小
+Checksum	校验和
+Clear Jumps and Calls	清除 Jumps 及 Calls
+Clear Jumps and Calls	清除跳转和调用
+CodeDoctor plugin by hnedka loaded!	CodeDoctor plugin 作者 hnedka loaded!
+CodeDoctor Settings	CodeDoctor 设置
+Complexity requirements exceeded	超过复杂性要求
+Compute - bad input operation	计算 - 输入操作损坏
+Compute - bad input size	计算 - 输入大小损坏
+Const 4 not found!	常数 4 没有找到!
+continue	继续
+contract	协定
+Convert to PUSH and possibly JMP	转换为 PUSH 或者 JMP
+Couldn't find API decryption key!	不能找到 API 解密 key!
+Couldn't read the exe file!	不能读取 exe 文件!
+Current profile	当前配置文件
+datatype not matching	数据类型不匹配的
+Debug %s!\\n\\nProgram: %s%s%s%s%s%s%s%s%s%s%s%s\\n\\n(Press Retry to debug the application)	Debug %s!\\n\\n程序: %s%s%s%s%s%s%s%s%s%s%s%s\\n\\n(Press Retry to debug the application)
+Deobf. - Single Step	反混淆-单步
+Deobfuscate Single Step	反混淆单步
+Deobfuscate when reaching any Jcc/CALL/RET	当碰到任何 Jcc/CALL/RET 时进行反混淆
+Deobfuscate	反混淆
+Deobfuscation	反混淆
+Disassembling (press SPACE to interrupt)	正在反汇编 (按 SPACE 中断)
+DLL List	DLL 列表
+Dll Loader Section couldn't be found!	Dll 加载器区段不能被找到!
+Done!	完成!
+Dumping objects ->\\n	转储对象 ->\\n
+Empty expression	空白表达式
+Encrypted/Packed sections:\\n	已加密/已压缩区段:\\n
+error - invalid iterator in MoveInst was provided	错误 - 在 MoveInst提供中无效迭代器
+Error before 4 loops.	错误，在循环4前.
+Error happened!	错误发生!
+error in DelInst	错误在DelInst
+Error in four loops!	错误，在四个循环中!
+Error in getting the position of dll - new version method	在获取 dll 位置错误 - 新版本方法
+Error in searching for bytes restoring original EP	在搜索字节还原原 EP 错误
+Error in thread safety code: could not acquire a lock	线程中的安全代码错误: 不能锁定
+Error in unpacking dll loader stub!	在抽取 dll loader stub时错误!
+Error in unpacking dll sections!	在抽取 dll 区段时错误!
+Error in unpacking the dll	在抽取 dll 时错误
+Error occured!	错误发生!
+Error	错误
+error	错误
+Error: XOR decryption at the start failed (old version)	错误: XOR 解密在开始时失败 (旧版本)
+Error; Addr: %0, Number: %d	错误; Addr: %0, 列数: %d
+exception: 	异常: 
+Expression: 	表达式: 
+Failed unpacking data (placed after 7th call)!	抽取数据失败 (放置之后 7th call)!
+FindMatchingExp - bad input operand index	 FindMatchingExp - 错误的输入操作索引
+Flags related filters	标志相关过滤器
+Floating Point	浮点
+FPU Management	FPU 管理
+General Purpose	常规用途
+General Settings	常规设置
+GetValueFromSubreg - bad input registers	GetValueFromSubreg - 输入寄存器异常
+Hotkeys	热键
+IAT - Error in API Name decryption (AIP)	IAT - 错误 在 API 名称解密 (AIP)
+in the middle of an isntruction	在 isntruction 的中间
+incorrect element in redisasm	不正确元素在redisasm
+Incorrect header of UserData	错误的用户数据头
+Incorrect section info	不正确的节信息
+Info	信息
+Instructions(s): 	指令: 
+Invalid back reference	返回引用无效
+Invalid character class name	无效的字符类名
+Invalid collation character	无效的校对字符
+Invalid content of repeat range	无效的内容属于重复范围
+invalid list<T> argument	无效的列表<T> 参数
+invalid list<T> subscript	无效列表<T> 下标
+invalid map/set<T> argument	无效的 map/set<T> 参数
+invalid map/set<T> iterator	无效的 map/set<T> 迭代程序
+Invalid or trailing backslash	无效或后缀反斜杠
+Invalid preceding regular expression	前面的正则表达式无效
+Invalid range end	无效的结束范围 
+Invalid regular expression object	无效的正则表达式对象
+Invalid regular expression	无效的正则表达式
+invalid string argument	无效的字串参数
+invalid string position	无效的字符串定位
+invalid vector<T> argument	无效的向量<T> 参数
+invalid vector<T> subscript	无效向量<T> 下标
+Iterator passed end of list!	列表迭代程序传递结束!
+Iterator passed start of list!	列表迭代程序传递已启动!
+Jumps and Calls	跳转及调用
+Jumps	跳转
+Jumpy Functions	Jumpy 函数
+Jumpy functions	跳转函数
+list<T> too long	列表<T> 太长
+Loop offset in API decrypting routine not found!	循环偏移量在 API 解密例程中没有找到!
+map/set<T> too long	map/设置<T> 太长
+Memory exhausted	内存耗尽
+Misc	杂项
+More than one result for Envelope function search.	More than one result for Envelope function 搜索.
+More than one result for RC4 key search.	比一个结果多用于 RC4 key 搜索.
+MOV reg/mem, imm filters	MOV reg/mem, imm 过滤器
+Move NOPs to bottom	将nop置后
+Move NOPs to Bottom	将nop置后
+MoveInst - passed start or end of the list	MoveInst - 列表传递启动或结束 
+Name	名称
+No match	不匹配
+No	否
+NOP after  forward CALLs, relative offset up to:	NOP置后CALLs向前,相对偏移适于:
+NOP conditional forward jumps as well	NOP有条件前置jumps也适用
+NOP forward JMPs with relative offset up to:	NOP前置JMPs同相对偏移适于:
+not a correct instruction	不是一个正确指令
+Not an AsProtect (probably).	不是一个 AsProtect (probably).
+Not an AsProtect or some strange version.	不是一个 AsProtect 或是一些奇怪版本.
+Not an AsProtect or some unknown version!	不是一个 AsProtect 或是一些位置版本!
+Number of functions: %Xh\\n	函数编号: %Xh\\n
+OEP - more regex results found!	OEP - 多个 regex 结果找到!
+OEP - out of range (after decryption)	OEP - 范围溢出 (在解密后)
+OEP - Record 8 is not decrypted!	OEP - 记录 8 没被解密!
+OEP - Record C/28 is not decrypted!	OEP - 记录 C/28 没有解密!
+OEP - Wrong checksum size!	OEP - 错误的 checksum 大小!
+OEP 8 length record - Too many results!	OEP 8 记录长度 - 太多结果!
+OEP C/28 length record - Too many results!	OEP C/28 记录长度 - 太多结果!
+OEP constant 4 - code not found!	OEP 常数 4 - 代码没有找到!
+OEP constant 4 - wrong index or record not available!	OEP 常数 4 - 错误索引或记录无效!
+OEP constant 4 index - Too many results!	OEP 常数 4 索引 - 太多结果!
+OEP Constant 4	OEP 常数 4
+OEP decryption loop - bad CMP	OEP 解密循环 - CMP损坏
+OEP ID not found!	OEP ID 未找到!
+OEP not decrypted!	OEP 没有被解密!
+OEP not found!	OEP 没有找到!
+OEP XOR Key - multiple results!	OEP XOR Key - 多个结果!
+One instruction filters	单指令过滤器
+Other misc filters	其他杂类过滤器
+Out of stack space	超出堆栈空间
+Parse Jumpy Function	检索跳转功能
+Parse Jumpy Functions	检索跳转功能
+Pass: %d, Found: %d, Total Found: %d (press SPACE to interrupt)	遍历: %d, 已找到: %d, 合计找到: %d (按 SPACE 中断)
+Passes: %d, Total Found: %d	遍历: %d, 合计找到: %d
+PolyOEP - couldn't find start of PUSH decryption loop!	PolyOEP - 不能找到 PUSH 解码循环起始!
+PolyOEP - Incorrectly decoded PUSH offset!	PolyOEP - 不正确的译码 PUSH 偏移!
+PolyOEP - multiple results when searching if alternative decoding method is used!	PolyOEP - 多重结果，当搜索时如果两者择一译码模式已使用!
+Premature end of regular expression	正则表达式过早的结束
+Profile %04d	配置文件 %04d
+R6002\\r\\n- floating point support not loaded\\r\\n	R6002\\r\\n- 浮点支持没加载\\r\\n
+R6008\\r\\n- not enough space for arguments\\r\\n	R6008\\r\\n- 参数空间不足\\r\\n
+R6009\\r\\n- not enough space for environment\\r\\n	R6009\\r\\n- 环境空间不足\\r\\n
+R6016\\r\\n- not enough space for thread data\\r\\n	R6016\\r\\n- 线程数据空间不足\\r\\n
+Rebuild Resources	重新建立资源
+Rebuild RSRC / Realign	重建资源/重排列
+ReDisasmInst - bad iterator as input	ReDisasmInst - 错误的输入迭代程序
+Registry	注册表
+RegSizeFromRegType2 - bad input type	RegSizeFromRegType2 - 输入类型异常
+Regular expression too big	正则表达式大
+Remove all FPU instructions	移除所有浮点指令
+Remove all	全部删除
+Remove	删除
+Replace with MOV instructions	替换为 MOV 指令
+Replace with PUSH imm	替换为 PUSH imm
+Replace with	替换为
+Run filters	运行过滤器
+runtime error 	runtime 错误 
+Runtime Error!\\n\\nProgram: 	运行时错误!\\n\\n程序: 
+RVA end > RVA start (CheckBackRefRange)	RVA 结束 > RVA 启动 (CheckBackRefRange)
+RVA: %X, UnpackedSize: %X, PackedSize: %X\\n	RVA: %X, 脱壳大小: %X, 压缩大小: %X\\n
+RVA: %Xh, Index: %d, Function: %s, DLL: %s\\n	RVA: %Xh, Index: %d, 函数: %s, DLL: %s\\n
+RVAtoIter - after end	RVAtoIter - 之后结束
+RVAtoIter - before start	RVAtoIter - 之前启动
+RVAtoIter - invalid input iterator	RVAtoIter - 无效输入迭代程序
+RVAtoIter - not found	RVAtoIter - 不查找
+Search and Replace	搜索&替换
+Search	搜索
+SecInfo not found!	不正确的节信息
+SetFromInstr - bad input parameter	SetFromInstr - 坏的输入参数
+Show menu in Disassembler window	在反汇编程序窗口中显示菜单
+Show menu in disassembler window	在反汇编窗口中显示菜单
+Show menu in Dump window	在转储窗口中显示菜单
+Show menu in dump window	在转储窗口中显示菜单
+Spaces between numbers	空格处在编号之间
+Special VM Decoding - Param AddBase not found or multiple results!	特殊 VM 译码 - 参数 AddBase 没有找到或多个结果!
+Special VM Decoding - Param Addr not found or multiple results!	特殊 VM 译码 - 程序地址没有找到或多个结果!
+Stack filters	堆栈过滤器
+Step over CALLs	下一表达式 CALLs
+Step over JCCs	下一表达式 JCCs
+string too long	字符串太长
+Success	成功
+Target specific filters	标志特定过滤器
+Text file	文本文件
+This is not AsProtect, buddy!	这不是 AsProtect, 伙计!
+ToDo - type 4	ToDo - 类型 4
+ToDo - type 5	ToDo - 类型 5
+Unable to open message catalog: 	不能打开信息目录: 
+Undo / Redo	取消/重新执行
+Undo and Redo	撤消及恢复
+Unknown error	未知错误
+Unknown exception	未知异常
+Unknown type of API!	未知类型API!
+unknown	未知
+Unmatched ( or \\\\(	不匹配 ( 或 \\\\(
+Unmatched ) or \\\\)	不匹配 ) 或 \\\\)
+Unmatched [ or [^	不匹配 [ 或 [^
+Unmatched { or \\\\{	不匹配 { 或 \\\\{
+Unpack AsProtect	AsProctect脱壳
+Unpacking failed - fixcall info not found!	脱壳失败 - 修复call 信息没有找到!
+Unpacking failed!	脱壳失败!
+Usage Error: Can't mix regular expression captures with POSIX matching rules	使用错误:不能混合使用正则表达式带POSIX相应的规则
+Use dummy value if EFLAGS state is unknown	如果EFLAGS状态未知使用虚拟值
+Use dummy values if AL is unknown	如果汇编语言未知使用虚拟值
+Variable start - multiple results!	变量开始 - 多重的结果！
+Variable start - not found!	变量开始 - 没找到！
+vector<T> too long	向量<T> 太长
+Version Info:\\n	版本信息:\\n
+Warning	警告
+XCHG filers	XCHG过滤器
+Yes	是

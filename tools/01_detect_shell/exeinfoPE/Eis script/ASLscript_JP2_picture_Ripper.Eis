@@ -1,0 +1,23 @@
+;Exeinfo PE script v.0.0
+
+
+req $VERSION,"0.02"   ; Required version script to run
+
+
+// Ripper script work at Exeinfo Pe ver.0.0.6.1
+
+
+// *.JP2 file extension you must change manually 
+
+
+msg This is RIPPER for *.JP2 pictures ( from pdf files )
+
+
+Ripper #0000000C6A5020
+
+
+
+
+
+
+End

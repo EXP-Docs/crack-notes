@@ -1,0 +1,18 @@
+ How to use it:   -> ImpRec plugin for Obsidium 1.3
+~~~~~~~~~~~~~~~~
+
+  Please note that Obsidium 1.3 does not space .dll(s) with 0x00000000 spaces as
+it  should.  Insted it filles it with APIs like MessageBoxW or GetModuleHandleA.
+So if you get these APIs at the end of the .dll you can cut them.
+
+ List of stolen APIs fixed:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ GetCurrentProcess
+ GetCommandLineA
+ GetVersion
+
+ Contact:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ coded by: ap0x
+ web-site: http://ap0x.jezgra.net
+ email:    ap0x.rce[at]gmail[dot][com]

@@ -1,0 +1,24 @@
+;Exeinfo PE script v.0.0  <-- first line must be : "Exeinfo PE script"
+
+
+; Required version script to run
+req $VERSION,"0.02"
+
+;   this is comment only
+
+
+
+; ****  set new file size ( in HEX bytes - hexadecimal value 500h = 1280 bytes - 1.25 KB )
+;   mov filesize,500
+
+; ****  set new Entry Point value in Hex
+;   mov OEP,1234
+
+
+; **** for creating file try :
+
+ savefile.jpg  <- new file will be created : Filename=Filename+".jpg"
+
+
+
+End

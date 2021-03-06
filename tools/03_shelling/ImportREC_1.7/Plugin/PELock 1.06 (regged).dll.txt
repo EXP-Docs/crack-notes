@@ -1,0 +1,19 @@
+How to use PeLock 1.06 (regged) ImpRec plugin:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  If you want to use this plugin to fix all missing imports you must create file
+name  dll.txt  in  the  same folder as .exe you are fixing. Content of this .txt
+file is name (or Full path) of .dll file whose imports you are currently fixing.
+So  if  missing  import  is  in kernel32.dll you will enter kernel32.dll in .txt
+file,  save  it  and  run plugin via ImpRec. If you need more then one .dll file
+edit .txt file for each .dll file. Example dll.txt is included in this package.
+
+ Related:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ PeLock 1.06 (C)ode (R)edirection (R)emover - http://ap0x.jezgra.net/misc.html
+
+
+ Contact:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ coded by: ap0x
+ web-site: http://ap0x.jezgra.net
+ email:    ap0x.rce[at]gmail[dot][com]

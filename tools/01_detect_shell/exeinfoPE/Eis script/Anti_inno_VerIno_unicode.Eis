@@ -1,0 +1,14 @@
+;Exeinfo PE script v.0.0
+
+
+req $VERSION,"0.00"
+
+; this script change "This installation was built with Inno Setup."  to :   "This installation was built" + empty zeros
+
+find-replace #7700690074006800200049006E006E006F002000530065007400750070#,#000000000000000000000000000000000000000000000000000000000000#		
+
+savefile  <- new file created : file_name+"_Fixed.exe"
+
+
+
+End

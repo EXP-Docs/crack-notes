@@ -1,0 +1,52 @@
+AddString				PROTO	:DWORD,:DWORD
+Compare					PROTO	:DWORD,:DWORD,:DWORD,:DWORD
+CreateArray				PROTO	:DWORD
+DeleteString			PROTO	:DWORD,:DWORD
+DestroyArray			PROTO	:DWORD
+EnumArray				PROTO	:DWORD,:DWORD
+ExpandArray				PROTO	:DWORD,:DWORD
+FindEmptyIndex			PROTO	:DWORD,:DWORD
+FindString				PROTO	:DWORD,:DWORD,:DWORD
+GetString				PROTO	:DWORD,:DWORD
+GetTopIndex				PROTO	:DWORD
+ReplaceString			PROTO	:DWORD,:DWORD,:DWORD
+
+lszCase					PROTO	:DWORD,:DWORD
+lszCaseW				PROTO	:DWORD,:DWORD
+lszCat					PROTO	:DWORD,:DWORD
+lszCatW					PROTO	:DWORD,:DWORD
+lszCmp					PROTO	:DWORD,:DWORD
+lszCmpW					PROTO	:DWORD,:DWORD
+lszCmpi					PROTO	:DWORD,:DWORD
+lszCmpiW				PROTO	:DWORD,:DWORD
+lszCopy					PROTO	:DWORD,:DWORD
+lszCopyW				PROTO	:DWORD,:DWORD
+lszCopyn				PROTO	:DWORD,:DWORD,:DWORD
+lszCopynW				PROTO	:DWORD,:DWORD,:DWORD
+lszCut					PROTO	:DWORD,:DWORD,:DWORD
+lszCutW					PROTO	:DWORD,:DWORD,:DWORD
+lszInsert				PROTO	:DWORD,:DWORD,:DWORD,:DWORD
+lszInsertW				PROTO	:DWORD,:DWORD,:DWORD,:DWORD
+lszInstr				PROTO	:DWORD,:DWORD,:DWORD
+lszInstrW				PROTO	:DWORD,:DWORD,:DWORD
+lszLen					PROTO	:DWORD
+lszLenW					PROTO	:DWORD
+lszPos					PROTO	:DWORD,:DWORD,:DWORD
+lszPosW					PROTO	:DWORD,:DWORD,:DWORD
+lszReverse				PROTO	:DWORD
+lszReverseW				PROTO	:DWORD
+lszSubst				PROTO	:DWORD,:DWORD
+lszSubstW				PROTO	:DWORD,:DWORD
+lszToken				PROTO	:DWORD,:DWORD
+lszTokenW				PROTO	:DWORD,:DWORD
+
+lszTrim					PROTO	:DWORD
+lszSoundEx				PROTO	:DWORD
+lszCatPlus equ <lszCatPlus@0>
+lszCatPlus				PROTO C :VARARG
+
+lszCopyMMX				PROTO	:DWORD,:DWORD
+lszLenMMX				PROTO	:DWORD
+lszLenMMXW				PROTO	:DWORD
+dwMemCopy				PROTO	:DWORD,:DWORD,:DWORD
+MemCopyMMX				PROTO	:DWORD,:DWORD,:DWORD

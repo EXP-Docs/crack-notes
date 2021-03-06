@@ -1,0 +1,24 @@
+;Exeinfo PE script v.0.0
+
+
+req $VERSION,"0.02"   ; Required version script to run
+
+
+// Ripper script work at Exeinfo Pe ver.0.0.6.1
+
+
+// You can Rip any Hex data after # sign or use ascii text like "RIFF" bellow
+
+// *.RIFF file extension you must change manually to .webp or .avi
+
+msg This example RIPPER rip - ( RIFF Container ) used in .WebP pictures  or .AVI movies
+
+
+Ripper RIFF
+
+
+
+
+
+
+End

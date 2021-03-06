@@ -1,0 +1,20 @@
+ How to use it:   -> ImpRec plugin for PrivateExeProtector 1.8
+~~~~~~~~~~~~~~~~
+
+  Please  not  that this plugin is made for my use only! This means that it will
+calculate  the  APIs  for  .exe  file fixed in special maner. You must wipe from
+header  the  section  before  the last and fix the last section by reverting two
+first numbers of last section`s virtual address to 0x00. After this you must fix
+all addresses that lead to the last section. Then you can use this plugin!
+
+ List of stolen APIs fixed:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ GetModuleHandleA
+ ExitProcess
+ GetModuleFileNameA
+
+ Contact:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ coded by: ap0x
+ web-site: http://ap0x.jezgra.net
+ email:    ap0x.rce[at]gmail[dot][com]

@@ -1,0 +1,18 @@
+;Exeinfo PE script v.0.0  <-- first line must be : "Exeinfo PE script"
+
+; Required version script to run
+
+req $VERSION,"0.02"
+
+; You need Exeinfo Pe v.0.0.6.1 to run this script
+
+msg  This script fix 7zip header file : "8z" to "7z" and similar tampared archives
+
+patch-offset(00000000,"7")
+
+// save file as ****.7z
+
+savefile.7z
+
+
+End

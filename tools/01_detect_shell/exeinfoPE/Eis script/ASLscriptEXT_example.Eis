@@ -1,0 +1,21 @@
+;Exeinfo PE script v.0.0  <-- first line must be : "Exeinfo PE script"
+
+
+; Required version script to run
+req $VERSION,"0.02"
+
+
+// Ripper script work at Exeinfo Pe ver.0.0.6.1
+
+// You can Rip any Hex data after # sign
+// example bytes : 5544332211
+
+Ripper #5544332211
+
+
+; savefile  - is not needed [ Ripper added new file name automaticlly ]
+
+
+
+
+End

@@ -1,0 +1,65 @@
+;Exeinfo PE script v.0.0  <-- first line must be : "Exeinfo PE script"
+
+
+; Required version script to run
+req $VERSION,"0.01"
+
+;   this is comment only
+
+//  this is comment only
+
+
+; **** Show message on the screen try : msg
+
+; msg Hello - User Message on the screen ...
+
+
+if you write nonsens line , line will be ignored and no Error detected ( *on this version Engine ) .
+
+
+; ****  if you use string for patching try ( Hex value must be : 0xxxxxxx not 0xxxx ) :
+; patch-offset(00000050,"--Wow on Pe Header--")  or  patch-offset:00000050,"--Wow on Pe Header--"
+
+; ****  if you use HEX bytes for patching try :
+; patch-offset(00000050,#F0F1F2F3F4#)  or patch-offset:00000050,#F0F1F2F3F4#
+
+
+; **** if you need search for ( Hex bytes ) try :
+
+;  find #004D535642564D36302E444C4C#   // length 13 bytes search  #00+"MSVBVM60.DLL"
+
+; ****  if you need search ( string ) try :
+
+; find "MSVBVM60.DLL"    or    find:"MSVBVM60.DLL"    
+
+
+; **** if you need exchange all bytes in the file ( as string ) 
+; try :
+; find-replace "DLL","ASL"   
+; or
+; patch-all "DLL","ASL"
+
+
+; **** if you need exchange all bytes in the file ( as HEX bytes ) 
+; try :
+; find-replace #444c4c#,#41534c#  
+; or
+; patch-all #444c4c#,#41534c#
+
+
+
+
+; ****  set new file size ( in HEX bytes - hexadecimal value 500h = 1280 bytes - 1.25 KB )
+;   mov filesize,500
+
+; ****  set new Entry Point value in Hex
+;   mov OEP,1234
+
+
+; **** for creating file try :
+
+ savefile  <- new file will be created : Filename=Filename+"_Fixed.exe"
+
+
+
+End

@@ -1,0 +1,2 @@
+LIBRARY EXC
+EXPORTS Trace

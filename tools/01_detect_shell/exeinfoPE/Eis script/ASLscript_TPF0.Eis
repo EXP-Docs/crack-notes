@@ -1,0 +1,16 @@
+;Exeinfo PE script v.0.0
+
+;
+; Borland Delphi Form protector by A.S.L
+; lame protect for editing : Resource Hacker or PE Explorer
+;
+
+
+ msg Form protector - only for Delphi Compiler not MS C++ or VBasic !
+
+ find-replace "TPF0","ASL0"   
+
+
+; create new file
+
+ savefile

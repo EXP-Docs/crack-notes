@@ -1,0 +1,22 @@
+;Exeinfo PE script v.0.0
+
+; instruction usage :
+
+; 1. Run ExeinfoPe
+; 2. Drag & Drop exeinfope.exe
+; 3. Click - File Menu->Run Script
+; 4. open : DPI_set_True.Eis
+; 5. you have new file : ExeinfoPe_Fixed.exe 
+
+ msg  This script set file dpiAware = TRUE , for Exeinfo & Windows10 Hi-Resolution screens , Fonts = sharp
+
+
+
+ find-replace "<dpiAware>false","<dpiAware>true</dpiAware>"   ; set to TRUE inside Manifest text data
+
+
+
+
+; create new file  : Exeinfope_fixed.exe
+
+savefile
