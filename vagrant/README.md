@@ -1,4 +1,20 @@
-# reverse-engineering-vagrant
+# vagrant
+
+
+推荐使用 52pojie 的 XP 虚拟机：https://www.52pojie.cn/thread-341238-1-1.html
+
+> 百度云盘：http://pan.baidu.com/s/1jHBvmp4 密码: g1jk
+
+特点：
+
+1. 集合了目前逆向破解中经常用到的工具，并且已安装好吾爱破解论坛小生我怕怕最新工具包！
+2. 修改虚拟机文件，可以躲过目前主流壳虚拟机检测，比如Safengine、VMProtect、ThemIDA等等！
+3. 已保存一份原始快照，虚拟系统出现问题可随时还原。
+4. 添加了诸多方便逆向的快捷操作 如：鼠标右键 发送到 OllyDbg 等等
+5. 还有一些优化不一一赘述，大家可以自行体验，如果需要更多高级工具可以在爱盘下载：http://down.52pojie.cn/Tools/
+
+> 很多工具都过时了，也就第 2 点有点优势，所以一般的壳用自己的 XP 虚拟机也未尝不可
+
 
 
 
