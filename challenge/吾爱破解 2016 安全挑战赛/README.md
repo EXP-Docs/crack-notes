@@ -158,7 +158,7 @@ goldfish 镜像 “Image” 包含一个2015年公开的漏洞（CVE-2015-3636�
 
 **环境要求：**
 
-此题目采用 VirtualBox (VMware) + Ubuntu 14.04.4 LTS 32bit桌面版（下载地址： http://www.ubuntu.com/download/desktop），参赛者须自己搭建，安装完成后请不要升级内核；
+此题目采用 [VirtualBox (VMware) + Ubuntu 14.04.4 LTS 32bit桌面版](http://www.ubuntu.com/download/desktop)，参赛者须自己搭建，安装完成后请不要升级内核；
 
 **题目描述：**
 
