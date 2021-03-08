@@ -20,8 +20,10 @@
 
 WinXP SP2 x64: 
 
-- [git-2.10.0](https://github-releases.githubusercontent.com/23216272/7830705c-71bd-11e6-946b-88a3a412ab2f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210307%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210307T092418Z&X-Amz-Expires=300&X-Amz-Signature=7b2554361c380867b550d71f5c91792bc88e773d5477b1a785490330fefe2086&X-Amz-SignedHeaders=host&actor_id=17040287&key_id=0&repo_id=23216272&response-content-disposition=attachment%3B%20filename%3DGit-2.10.0-64-bit.exe&response-content-type=application%2Foctet-stream)
-- [smartgit-18.1.5](https://www.syntevo.com/downloads/smartgit/archive/smartgit-win-18_1_5.zip)
+- [git-2.10.0](https://github.com/git-for-windows/git/releases/tag/v2.10.0.windows.1)
+- [SmartGit-18.1.5](https://www.syntevo.com/downloads/smartgit/archive/smartgit-win-18_1_5.zip)
+- [Microsoft .NET Framework 2.0 Service Pack 2](https://www.microsoft.com/zh-tw/download/details.aspx?id=1639)
+- [Microsoft .NET Framework 4](https://www.microsoft.com/zh-tw/download/details.aspx?id=17718)
 
 
 ## 迅速搭建本地开发/测试环境
