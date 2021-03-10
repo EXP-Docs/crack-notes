@@ -1,6 +1,6 @@
 # course-06 继续打第一只老虎
 
-> [>> 回到目录](README.md)
+> [>> 原文](https://www.52pojie.cn/thread-1359367-1-1.html)
 
 ------
 
@@ -32,3 +32,7 @@
 
 - [course-06-01.exe](PEs/course-06-01.exe)： 机器码验证登录
 - [course-06-02.exe](PEs/course-06-02.exe)： 注册表重启验证
+
+------
+
+> [>> 回到目录](README.md)

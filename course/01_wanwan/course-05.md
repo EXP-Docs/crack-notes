@@ -1,6 +1,6 @@
 # course-05 一起打倒阻碍新手的“拦路虎”
 
-> [>> 回到目录](README.md)
+> [>> 原文](https://www.52pojie.cn/thread-1359142-1-1.html)
 
 ------
 
@@ -29,3 +29,7 @@
 - [course-05-01.exe](PEs/course-05-01.exe)： 没加壳
 - [course-05-02.exe](PEs/course-05-02.exe)： 加了壳
 - [course-05-03.exe](PEs/course-05-03.exe)： 多次调用同一个验证CALL（你可以在破解时进入验证CALL，找到正确的密码）
+
+------
+
+> [>> 回到目录](README.md)
