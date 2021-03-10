@@ -20,11 +20,11 @@
 ## 导航
 
 - [course-01](course-01.md)：破解到底破什么？ 【[>> 原文](https://www.52pojie.cn/thread-1358649-1-1.html)】
-- [course-02](course-02.md)：破解到底破什么？ 【[>> 原文](https://www.52pojie.cn/thread-1358649-1-1.html)】
-- [course-03](course-03.md)：破解到底破什么？ 【[>> 原文](https://www.52pojie.cn/thread-1358649-1-1.html)】
-- [course-04](course-04.md)：破解到底破什么？ 【[>> 原文](https://www.52pojie.cn/thread-1358819-1-1.html)】
-- [course-05](course-05.md)：破解到底破什么？ 【[>> 原文](https://www.52pojie.cn/thread-1359142-1-1.html)】
-- [course-06](course-06.md)：破解到底破什么？ 【[>> 原文](https://www.52pojie.cn/thread-1359367-1-1.html)】
-- [course-07](course-07.md)：破解到底破什么？ 【[>> 原文](https://www.52pojie.cn/thread-1359616-1-1.html)】
+- [course-02](course-02.md)：怎么破解？ 【[>> 原文](https://www.52pojie.cn/thread-1358649-1-1.html)】
+- [course-03](course-03.md)：如何找到验证的关键位置 【[>> 原文](https://www.52pojie.cn/thread-1358649-1-1.html)】
+- [course-04](course-04.md)：可以实战一下了 【[>> 原文](https://www.52pojie.cn/thread-1358819-1-1.html)】
+- [course-05](course-05.md)：一起打倒阻碍新手的“拦路虎” 【[>> 原文](https://www.52pojie.cn/thread-1359142-1-1.html)】
+- [course-06](course-06.md)：继续打第一只老虎 【[>> 原文](https://www.52pojie.cn/thread-1359367-1-1.html)】
+- [course-07](course-07.md)：顺路打倒几只“病猫” 【[>> 原文](https://www.52pojie.cn/thread-1359616-1-1.html)】
 
 
