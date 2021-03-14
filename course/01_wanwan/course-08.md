@@ -1,4 +1,4 @@
-# course-08 快速学会使用OD工具
+# course-08 快速学会使用 OD 工具
 
 > [>> 原文](https://www.52pojie.cn/thread-1359848-1-1.html)
 
