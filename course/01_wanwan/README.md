@@ -26,11 +26,13 @@
 - [course-05](course-05.md)：一起打倒阻碍新手的“拦路虎”
 - [course-06](course-06.md)：继续打第一只老虎
 - [course-07](course-07.md)：顺路打倒几只“病猫”
-- [course-08](course-08.md)：快速学会使用OD工具
+- [course-08](course-08.md)：快速学会使用 OD 工具
 - [course-09](course-09.md)：OD 学习的最后一课
 - [course-10](course-10.md)：今天就让你尝到“成功”的味道
 - [course-11](course-11.md)：继续让你尝到“成功”的味道
 - [course-12](course-12.md)：进一步品尝“成功”的味道
-
+- [course-13](course-13.md)：集中解答新人们的几个困惑问题
+- [course-14](course-14.md)：集中解答新人们的几个困惑问题（二）
+- [course-15](course-15.md)：阶段练习
 
 
