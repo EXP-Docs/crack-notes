@@ -34,5 +34,10 @@
 - [course-13](course-13.md)：集中解答新人们的几个困惑问题
 - [course-14](course-14.md)：集中解答新人们的几个困惑问题（二）
 - [course-15](course-15.md)：阶段练习
-
+- [course-16](course-16.md)：关于“灰色按钮”的破解思路
+- [course-17](course-17.md)：深入“灰色按钮”，增加“重启验证”
+- [course-18](course-18.md)：与“反调试”的第一次亲密接触 
+- [course-19](course-19.md)：与“反调试”的第二次亲密接触
+- [course-20](course-20.md)：“反调试”与“字符串加密”的联手
+- [course-21](course-21.md)：破解软件使用次数
 
