@@ -8,7 +8,7 @@
 
 是VB程序编写的软件。
 
-CM名称：[Afkayas.1.exe](PEs/Afkayas.1.exe)
+CM名称：[AfKayAs.1.exe](PEs/AfKayAs.1.exe)
 
 首先运行一下，看看失败后的结果。
 
@@ -62,7 +62,7 @@ CM名称：[Afkayas.1.exe](PEs/Afkayas.1.exe)
 
 对于VB程序，还有专门的破解神器。
 
-这个神器的名字叫：VB Decompiler
+这个神器的名字叫：[VB Decompiler](../../tools/03_disassembler/vb_decompiler)
 
 这个软件可以对没有加壳的VB程序进行几乎是源代码级别的还原。
 

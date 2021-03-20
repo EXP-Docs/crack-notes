@@ -108,9 +108,9 @@ NAG窗口的设计原理是：软件作者故意设计，其目的就是当你�
 
 ![](imgs/course-22-09.png)
 
-DarkDe4，简称DD，这个软件是破解Delphi程序的核武器。
+[DarkDe4](../../tools/03_disassembler/DarkDe4)，简称DD，这个软件是破解Delphi程序的核武器。
 
-> DarkDe4 是 2004 年的产品，对于反编译 Delphi 7.0 开发的软件完全不适用，推荐使用 [IDR(Interactive Delphi Reconstructor)](https://github.com/crypto2011/IDR) 
+> DarkDe4 是 2004 年的产品，对于反编译 Delphi 7.0 开发的软件完全不适用，推荐使用 [IDR(Interactive Delphi Reconstructor)](../../tools/03_disassembler/idr) 
 
 DD使用方法：把CM拖入DD后，会提示转储成功，点是，接着又会出现两次对话框都点否，然后点“过程”。
 
