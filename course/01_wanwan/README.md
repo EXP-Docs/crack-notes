@@ -40,4 +40,9 @@
 - [course-19](course-19.md)：与“反调试”的第二次亲密接触
 - [course-20](course-20.md)：“反调试”与“字符串加密”的联手
 - [course-21](course-21.md)：破解软件使用次数
+- [course-22](course-22.md)：西天取经 —— 第 1 难
+- [course-23](course-23.md)：西天取经 —— 第 2 难
+- [course-24](course-24.md)：西天取经 —— 第 3 难
+- [course-25](course-25.md)：西天取经 —— VB程序破解方法综述
+
 
