@@ -1,0 +1,2 @@
+#define ICO_MAIN			500
+ICO_MAIN		ICON      DISCARDABLE "Res/TxtDoc.ico"

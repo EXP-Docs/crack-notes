@@ -1,0 +1,27 @@
+[PROJECT]
+Type=1
+ReleaseCommandLine=
+DebugCommandLine=
+AutoIncFileVersion=1
+RCSilent=0
+PellesTools=0
+[MAKE]
+ActiveBuild=0
+CompileRC=/v
+RCToObj=
+Assemble=/c /coff /Cp /nologo
+Link=/SUBSYSTEM:WINDOWS /RELEASE /VERSION:4.0 /OPT:NOWIN98
+Out=SaveRTF.dll
+DebAssemble=/Zi /Zd /c /coff /Cp /nologo
+DebLink=/SUBSYSTEM:WINDOWS /DEBUG /DEBUGTYPE:CV /VERSION:4.0 /INCREMENTAL:NO
+DebOut=SaveRTF.dll
+[FILES]
+1=VBDM_SaveRTF.asm
+2=SaveRTF.asm
+3=VBDM_SaveRTF.def
+4=VBDM_SaveRTF.inc
+5=VBDM_SaveRTF.rc
+6=Res/VBDM_SaveRTFVer.rc
+7=Res/VBDM_SaveRTFRes.rc
+[SHOWFILE]
+1=0000000000000000620300009E01000000000000030000000000000007

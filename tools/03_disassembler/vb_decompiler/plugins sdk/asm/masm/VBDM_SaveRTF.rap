@@ -1,0 +1,154 @@
+[Project]
+Assembler=masm
+Type=Dll Project
+Description=VBDec Module - SaveRTF
+Backup=$P\Bak\
+Group=1
+GroupExpand=1
+Ver.rc=1
+Debug=0
+Res.rc=1
+[MakeFiles]
+0=VBDM_SaveRTF.rap
+1=VBDM_SaveRTF.rc
+2=VBDM_SaveRTF.asm
+3=VBDM_SaveRTF.obj
+4=VBDM_SaveRTF.res
+5=VBDM_SaveRTF.exe
+6=VBDM_SaveRTF.def
+7=SaveRTF.dll
+8=VBDM_SaveRTF.txt
+9=VBDM_SaveRTF.lib
+10=VBDM_SaveRTF.mak
+11=VBDM_SaveRTF.hla
+12=VBDM_SaveRTF.com
+13=VBDM_SaveRTF.ocx
+14=VBDM_SaveRTF.idl
+15=VBDM_SaveRTF.tlb
+[MakeDef]
+Menu=1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0
+1=4,O,$B\RC.EXE /v,1
+2=3,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",2
+3=7,O,$B\LINK.EXE /SUBSYSTEM:WINDOWS /RELEASE /OPT:NOWIN98 /STUB:Stub.exe /DLL /DEF:$6 /LIBPATH:"$L" /OUT:"$7",3,4
+4=0,0,,5
+5=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+6=*.obj,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",*.asm
+7=0,0,"$E\OllyDbg",5
+11=4,O,$B\RC.EXE /v,1
+12=3,O,$B\ML.EXE /c /coff /Cp /Zi /nologo /I"$I",2
+13=7,O,$B\LINK.EXE /SUBSYSTEM:WINDOWS /DEBUG /DLL /DEF:$6 /LIBPATH:"$L" /OUT:"$7",3
+14=0,0,,5
+15=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+16=*.obj,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",*.asm
+17=0,0,"$E\OllyDbg",5
+[Group]
+Group=Added files,Assembly,Resources,Misc,Modules,Includes,Def
+1=2
+2=5
+3=6
+4=3
+5=7
+6=3
+7=3
+[Files]
+1=VBDM_SaveRTF.asm
+2=SaveRTF.asm
+3=VBDM_SaveRTF.inc
+4=VBDM_SaveRTF.rc
+5=VBDM_SaveRTF.def
+6=Res\VBDM_SaveRTFRes.rc
+7=Res\VBDM_SaveRTFVer.rc
+
+[VersionControl]
+Settings=1246
+Milestones=129
+MilestoneEvery=10
+MilestoneEveryCurrent=0
+MilestoneOnBuild=0.0.0.0
+MilestoneOnTime=2
+MilestoneOnDate=0
+MilestoneOnDateWhen=1
+MilestoneOnDateStatus=0
+MilestoneOnDateDate=20
+MilestoneOnDateTimeYear=2006
+MilestoneOnDateTimeMonth=1
+MilestoneOnDateTimeDate=20
+MilestoneOnDateTimeHour=11
+MilestoneOnDateTimeMin=2
+MilestoneOnDateTimeSec=23
+MilestoneOnDateTimeStatus=0
+BackupLocation=C:\Utils\Dev\RadASM\Masm\Projects\VCBackups\
+CompressionLevel=0
+DefaultComment=Project $N, $Z, Backup Created On $D At $T.
+ExcludeExt1=\
+ExcludeExt2=\
+ExcludeExt3=\
+ExcludeExt4=\
+FileVerLength=4
+FileVer2Range=0
+FileVer3Range=0
+FileVer4Range=0
+ProductVerLength=4
+ProductVer2Range=0
+ProductVer3Range=0
+ProductVer4Range=0
+[Colref]
+0=00FFFFFF
+1=00FFFFFF
+2=00FFFFFF
+3=00FFFFFF
+4=00FFFFFF
+5=00FFFFFF
+6=00FFFFFF
+7=00FFFFFF
+[BookMark]
+0=
+1=
+2=
+3=
+4=
+5=
+6=
+7=
+8=
+9=
+[BreakPoint]
+0=
+[Collapse]
+5=
+3=
+2=
+4=
+1=
+6=
+7=
+[Size]
+5=0,0,0,0,0
+3=0,0,0,0,275
+2=0,0,0,0,0
+4=0,0,0,0,69
+1=0,0,0,0,419
+6=0,0,0,0,0
+7=0,0,0,0,443
+
+[VerInf]
+Nme=IDV_VBDM_VER
+ID=1
+FV=1,0,0,37
+PV=1.0.0.0
+VerOS=0x00000004
+VerFT=0x00000002
+VerLNG=0x00000409
+VerCHS=0x000004B0
+ProductVersion=1.0.0
+ProductName=
+OriginalFilename=SaveRTF.dll
+LegalTrademarks=
+LegalCopyright=© by Jupiter, 2005-2006
+InternalName=VBDecM_SaveRTF
+FileDescription=VBDecompiler Module - SaveRTF
+FileVersion=1.0.0
+CompanyName=Free Software Foundation
+
+[Resource]
+1=ICO_MAIN,500,2,Res\TxtDoc.ico
