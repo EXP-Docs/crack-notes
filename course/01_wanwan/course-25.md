@@ -1,4 +1,4 @@
-# course-25 西天取经 —— VB程序破解方法综述
+# course-25 西天取经 —— VB 程序破解方法综述
 
 > [>> 原文](https://www.52pojie.cn/thread-1370183-1-1.html)
 

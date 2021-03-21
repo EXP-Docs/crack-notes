@@ -43,6 +43,6 @@
 - [course-22](course-22.md)：西天取经 —— 第 1 难
 - [course-23](course-23.md)：西天取经 —— 第 2 难
 - [course-24](course-24.md)：西天取经 —— 第 3 难
-- [course-25](course-25.md)：西天取经 —— VB程序破解方法综述
-
-
+- [course-25](course-25.md)：西天取经 —— VB 程序破解方法综述
+- [course-26](course-26.md)：易语言程序的快速破解 
+- [course-27](course-27.md)：破解的坑和思路
