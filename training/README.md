@@ -1,3 +1,15 @@
-https://down.52pojie.cn/Challenge/
+## 破解训练
 
-TODO： 训练题 or 挑战赛真题
+------
+
+| 路径 | 分类 | 描述 |
+|:----:|:----:|:----|
+| [01_crakeme](01_crakeme) | 适合新手破解入门的 160 个 CrackMe 练习 | |
+| [02_52pj_challenge_2016](02_52pj_challenge_2016) | 吾爱破解 2016 安全挑战赛 | |
+
+
+
+## 更多资料
+
+- [吾爱破解论坛『CM 区』](http://www.52pojie.cn/forum-22-1.html)：脱壳练习、破解练习、算法分析练习、程序二次开发练习
+

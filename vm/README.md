@@ -1,4 +1,6 @@
-# 虚拟机环境搭建
+## 破解环境搭建
+
+------
 
 
 推荐使用 52pojie 的 XP 虚拟机：https://www.52pojie.cn/thread-341238-1-1.html
