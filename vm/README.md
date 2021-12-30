@@ -29,9 +29,13 @@ WinXP SP2 x64:
 
 
 ## 迅速搭建本地开发/测试环境
-为了使开发人员可以迅速搭建本地的测试环境用于 ansible 脚本编写与 wazuh 相关开发，添加使用 [Vagrant](https://www.vagrantup.com/) 的环境方案。
+
+添加使用 [Vagrant](https://www.vagrantup.com/) 的环境方案。
+
+> Github : reverse-engineering-vagrant
 
 ### 安装
+
 前往 [Vagrant](https://www.vagrantup.com/downloads.html) 与 [VirtualBox](https://www.virtualbox.org/wiki/Downloads) 安装
 
 ### 使用
